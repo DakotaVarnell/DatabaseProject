@@ -4,7 +4,7 @@ DROP TABLE Directs CASCADE CONSTRAINTS;
 
 CREATE TABLE Movie(
 Movie_Title_ID	VARCHAR2(20), 
-Name	VARCHAR2(20),
+Movie_Name	VARCHAR2(20),
 Popularity NUMBER(15),
 IMDB_Rating NUMBER(3),
 Certification VARCHAR2(20),
