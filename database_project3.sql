@@ -12,36 +12,33 @@ DROP TABLE Works_For CASCADE CONSTRAINTS;
 
 
 CREATE TABLE Movie(
-Movie_Title_ID	VARCHAR2(20), 
+Movie_Title_ID	VARCHAR2(20) CONSTRAINT Movie_Movie_Title_Id_PK PRIMARY KEY, 
 Movie_Name	VARCHAR2(20),
 Popularity NUMBER(15),
 IMDB_Rating NUMBER(3),
 Certification VARCHAR2(20),
 Box_Office_Revenue NUMBER(15),
 Budget NUMBER(10),
-Writer_FName VARCHAR2(20),
-Writer_LName VARCHAR(20)
 );
 
 CREATE TABLE Directs(
-Director_FName VARCHAR2(20),
-Director_LName VARCHAR2(20),
-Movie_Title_Id_Direct VARCHAR2(20)
+dName VARCHAR2(40) CONSTRAINT Directs_dName_PK PRIMARY KEY,
+Movie_Title_Id VARCHAR2(20),
+
 );
 
 CREATE TABLE Writes(
-WriterFName VARCHAR2(20),
-Writer_LName VARCHAR2(20),
-Movie_Title_Id_Writer VARCHAR2(20)
+wName VARCHAR2(40) CONSTRAINT Writes_wName_PK PRIMARY KEY,
+Movie_Title_Id VARCHAR2(20),
 );
 
 CREATE TABLE Contains(
-Soundtrack_Title VARCHAR2(30),
-Movie_Title_Id_Contain VARCHAR2(20)
+Soundtrack_Title VARCHAR2(30) CONSTRAINT Contains_Soundtrack_Title_PK PRIMARY KEY,
+Movie_Title_Id VARCHAR2(20),
 );
 
 CREATE TABLE Reviews(
-Username VARCHAR2(25),
+Username VARCHAR2(25) CONSTRAINT Reviews_Username_PK PRIMARY KEY,
 Review_Contents VARCHAR2(100),
 Score VARCHAR2(20), 
 Date_of_Review DATE,
@@ -49,17 +46,18 @@ Rev_Movie_Id VARCHAR2(20)
 );
 
 CREATE TABLE Genres(
-Genre VARCHAR2(20),
-Movie_Title_Id_Genre VARCHAR2(20)
+Genre VARCHAR2(20) CONSTRAINT Genres_Genre_PK PRIMARY KEY,
+Movie_Title_Id VARCHAR2(20)
 );
 
 CREATE TABLE Languages(
-Lang VARCHAR2(20),
-Movie_Title_Id_Languages VARCHAR2(20)
+Lang VARCHAR2(20) CONSTRAINT Languages_Lang_PK PRIMARY KEY,
+Movie_Title_Id VARCHAR2(20)
 );
 
 CREATE TABLE Award(
-ID	VARCHAR2(20), 
+ID	VARCHAR2(20) CONSTRAINT Award_ID_PK PRIMARY KEY, 
+Movie_Title_Id VARCHAR (20),
 Award_Name	VARCHAR2(20),
 Recipient_FName VARCHAR2(20),
 Recipient_LName VARCHAR2(20),
@@ -72,8 +70,7 @@ Director_Receives VARCHAR2(20)
 );
 
 CREATE TABLE Person(
-First_Name	VARCHAR2(20), 
-Last_Name	VARCHAR2(20),
+Name    VARCHAR(40),
 Birthdate DATE,
 Hometown VARCHAR2(25),
 Gender VARCHAR2(20),
@@ -90,61 +87,68 @@ Director_Flag VARCHAR2(20)
 );
 
 CREATE TABLE Soundtrack(
-Title	VARCHAR2(25), 
-Writer_FName VARCHAR2(20),
-Writer_LName VARCHAR2(20),
+Title	VARCHAR2(25) CONSTRAINT Soundtrack_Title_PK PRIMARY KEY,
+cName VARCHAR(20),
 Performer_FName VARCHAR2(20),
 Performer_LName VARCHAR2(20),
 Ratings NUMBER(20)
 );
 
 CREATE TABLE Works_For(
-Movie_Title_ID_WorksFor	VARCHAR2(20), 
-Actor_FName VARCHAR2(20),
-Actor_LName VARCHAR2(20),
+Movie_Title_ID	VARCHAR2(20), 
+aName VARCHAR2(40) CONSTRAINT Works_For_aName_PK PRIMARY KEY,
 Supporting VARCHAR2(20),
 Leading VARCHAR2(20),
-Pay NUMBER(20)
+Pay NUMBER(20),
 );
 
+ALTER TABLE Directs
+    ADD CONSTRAINT Directs_Movie_Title_Id_fk FOREIGN KEY(Movie_Title_Id)
+    REFERENCES Movie(Movie_Title_Id);
 
--- INSERT INTO Movie
--- VALUES('12345','Lion King', 1500, 5, 'PG-13', 200000, 100000, 'Guillermo', 'DelTorro'); 
+ALTER TABLE Writes
+    ADD CONSTRAINT Writes_Movie_Title_Id_fk FOREIGN KEY(Movie_Title_Id)
+    REFERENCES Movie(Movie_Title_Id);
 
--- INSERT INTO Movie
--- VALUES('12222','The Little Mermaid', 1600, 6, 'PG-13', 300000, 100000, 'Michael', 'Tortoise'); 
+ALTER TABLE Contains
+    ADD CONSTRAINT Contains_Movie_Title_Id_fk FOREIGN KEY(Movie_Title_Id)
+    REFERENCES Movie(Movie_Title_Id);
 
--- INSERT INTO Movie
--- VALUES('15555','Tarzan', 1700, 7, 'PG-13', 400000, 100000, 'Thomas', 'Bay'); 
+ALTER TABLE Contains
+    ADD CONSTRAINT Contains_Movie_Title_Id_fk FOREIGN KEY(Movie_Title_Id)
+    REFERENCES Movie(Movie_Title_Id);
 
--- INSERT INTO Directs
--- VALUES('John', 'Smith','162jdjd7');
+ALTER TABLE Reviews
+    ADD CONSTRAINT Reviews_Rev_Movie_Id_fk FOREIGN KEY(Rev_Movie_Id)
+    REFERENCES Movie(Movie_Title_Id);
 
--- INSERT INTO Directs
--- VALUES('Tanner', 'Canada', '1332323jj');
+ALTER TABLE Genres
+    ADD CONSTRAINT Genres_Movie_Title_Id_fk FOREIGN KEY(Movie_Title_Id)
+    REFERENCES Movie(Movie_Title_Id);
 
--- INSERT INTO Directs
--- VALUES('Jack', 'White', '12121212dd');
+ALTER TABLE Languages
+    ADD CONSTRAINT Languages_Movie_Title_Id_fk FOREIGN KEY(Movie_Title_Id)
+    REFERENCES Movie(Movie_Title_Id);
 
--- ALTER TABLE Movie
--- ADD CONSTRAINT movie_movieTitleId_pk PRIMARY KEY(Movie_Title_Id);
+ALTER TABLE Award
+    ADD CONSTRAINT Award_Movie_Title_Id_fk FOREIGN KEY(Movie_Title_Id)
+    REFERENCES Movie(Movie_Title_Id);
+ALTER TABLE Award
+    ADD CONSTRAINT Award_Actor_Receives_fk FOREIGN KEY(Actor_Receives)
+    REFERENCES Works_For(aName);
+ALTER TABLE Award
+    ADD CONSTRAINT Award_Director_Receives_fk FOREIGN KEY(Director_Receives)
+    REFERENCES Directs(dName);
+ALTER TABLE Award
+    ADD CONSTRAINT Award_Writer_Receives_fk FOREIGN KEY(Writer_Receives)
+    REFERENCES Directs(wName);
 
--- ALTER TABLE Directs
--- ADD CONSTRAINT directs_MovieTableID_fk FOREIGN KEY(Movie_Title_Id_Direct)
--- REFERENCES Movie(Movie_Title_Id);
+Alter Soundtrack
+    ADD CONSTRAINT Soundtrack_Title_fk FOREIGN KEY(Title)
+    REFERENCES Contains(Soundtrack_Title);
 
 
--- SELECT * FROM Movie;
--- SELECT * FROM Directs;
--- SELECT * FROM Writes;
--- SELECT * FROM Contains;
--- SELECT * FROM Reviews;
--- SELECT * FROM Genres;
--- SELECT * FROM Languages;
--- SELECT * FROM Award;
--- SELECT * FROM Person;
--- SELECT * FROM Soundtrack;
--- SELECT * FROM Works_For;
+
 
 DESC Movie;
 DESC Directs;
