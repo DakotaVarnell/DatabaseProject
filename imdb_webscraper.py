@@ -10,7 +10,6 @@ sample_website='https://www.imdb.com/chart/top/'
 # call get method to request the page
 page=requests.get(sample_website)
   
-# with the help of BeautifulSoup
 # method and html parser created soup
 soup = BeautifulSoup(page.content, 'html.parser')
 
@@ -36,12 +35,8 @@ for i in soup.find_all('a', href = True):
 
 #Convert our list of ids to a set because sets cannot contain duplicates thus removing all duplicates
 set_of_ids = set(list_of_ids)
-#Convert back to a list so that we now have a list of 250 title ids whcih makes it easier for me(dakota) to work with rather than sets
+#Convert back to a list so that we now have a list of 250 title ids which makes it easier for me(dakota) to work with rather than sets
 list_of_ids = list(set_of_ids)
-
-# print('Len of list: '  + str(len((list_of_ids))))
-# print("\nList of ID's:")
-# print(list_of_ids)
 
 #Here we will create lists for each table's information
 movie_table_info = []
@@ -62,13 +57,19 @@ works_for_table_info = []
 
 # create an instance of the Cinemagoer class
 ia = Cinemagoer()
+
+#Id for the sake of testing
 id = '0441773'
 
 # get a movie
 movie = ia.get_movie('0441773')
+
+#Update the keys of the movie to include these categories, not included by default
 ia.update(movie, ['reviews'])
 ia.update(movie, ['awards'])
 ia.update(movie, ['soundtrack'])
+
+#this will show you all available keys to search through
 #print(sorted(movie.keys())) 
 
 #Movie Table Information
@@ -132,7 +133,8 @@ for language in movie.data['languages']:
         combined_languages += language + ","
         count += 1    
 languages_table_info.append(str(combined_languages) + " , " + str(id))
-#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Dont really know how to do the movie/actor/director/writer receives part so skipping it
+
+#!!Dont really know how to do the movie/actor/director/writer receives part so skipping it!!
 #Awards Table Information
 for award in movie['awards']:
     movie_id = id
@@ -141,8 +143,7 @@ for award in movie['awards']:
     event = str(award['category'])
     
 
-#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Hardest table by far to actually populate because most attributes dont exist
-# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! in cinemagoer
+
 # #Person Table Information
 # people_list = movie['cast'] + movie['directors'] + movie['writers']
 # person_id_list = []
@@ -181,7 +182,6 @@ for award in movie['awards']:
 
 
 print(movie_table_info)
-
 ############################################################################
 #Database Connection Section
 import cx_Oracle
@@ -197,14 +197,15 @@ else:
     try:
         cur = con.cursor()
 
-        #Temporary Data for Testing
+        #All these tables will change to the proper information once we iterate through movies
         movie_data = [[movie_table_info[0], movie_table_info[1], movie_table_info[2], movie_table_info[3], movie_table_info[4] ,movie_table_info[5], movie_table_info[6]]]
-        #movie_data = [[movie_table_info[0], movie_table_info[1], movie_table_info[2], 0, movie_table_info[4] ,movie_table_info[5], movie_table_info[6]]]
-
+        #review_data = [[reviews_table_info[0]], reviews_table_info[1], reviews_table_info[2], reviews_table_info[3], reviews_table_info[4]]
         cur = con.cursor()
         # Inserting multiple records into employee table
         # (:1,:2,:3) are place holders. They pick data from a list supplied as argument
         cur.executemany('insert into movie values(:1,:2,:3,:4,:5,:6,:7)', movie_data)
+        #cur.executemany('insert into reviews values(:1,:2,:3,:4,:5)', review_data)
+
  
     except cx_Oracle.DatabaseError as er:
         print('There is an error in Oracle database:', er)
