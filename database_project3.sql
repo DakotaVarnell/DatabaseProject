@@ -13,12 +13,12 @@ DROP TABLE Works_For CASCADE CONSTRAINTS;
 
 CREATE TABLE Movie(
 Movie_Title_ID	VARCHAR2(20) CONSTRAINT Movie_Movie_Title_Id_PK PRIMARY KEY, 
-Movie_Name	VARCHAR2(20),
+Movie_Name	VARCHAR2(30),
 Popularity NUMBER(15),
-IMDB_Rating NUMBER(3),
+IMDB_Rating FLOAT(15),
 Certification VARCHAR2(20),
-Box_Office_Revenue NUMBER(15),
-Budget NUMBER(10)
+Box_Office_Revenue NUMBER(20),
+Budget NUMBER(20)
 );
 
 CREATE TABLE Directs(
@@ -39,7 +39,7 @@ CONSTRAINT Contains_Soundtrack_Title_PK PRIMARY KEY(Soundtrack_Title,Movie_Title
 
 CREATE TABLE Reviews(
 Username VARCHAR2(25),
-Review_Contents VARCHAR2(100),
+Review_Contents VARCHAR2(400),
 Score VARCHAR2(20), 
 Date_of_Review DATE,
 Rev_Movie_Id VARCHAR2(20),
