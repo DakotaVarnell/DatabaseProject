@@ -1,58 +1,88 @@
-def write_movies(table_name, id):
+#Webscraper for the imdb website
+from imdb import Cinemagoer
+import cx_Oracle
 
-    ia = Cinemagoer()
+
+def writeInsertFile(tableName, infoList):
+    testFile = open('insertFile.sql', 'a')
+
+    query = "\ninsert into " + tableName + "\n" + "\t" + "values("
+
+    print("Still Running\n")
+
+    for attribute in infoList:
+        if (type(attribute) == int):
+            query+= str(attribute) + ","
+        elif (type(attribute) == float):
+            query+= str(attribute) + ","
+        else:
+            query+= "\'" + attribute + "\'" + ","
+    
+    query = query.rstrip(query[-1])
+    query += ');'
+
+    testFile.write(query)
+
+def write_movies(table_name, id):
     movie = ia.get_movie(id)
 
     try:
         revenue = int(str(movie['box office']['Cumulative Worldwide Gross']).split()[0].replace(',', '').replace('$', '').replace('}', '').replace("'", ''))
         budget = int(str(movie['box office']['Budget']).split()[0].replace(',', '').replace('$', '').replace('}', '').replace("'", ''))
     except:
-        revenue = None
-        budget = None
+        revenue = ''
+        budget = ''
 
+    info = [id, movie['title'], '', movie['rating'], str(movie['certification'][-4]).split(':')[1], revenue, budget]
+    writeInsertFile('Movie', info)
 
-    info = [id, movie['title'], None, movie['rating'], str(movie['certification'][-4]).split(':')[1], revenue, budget]
-    print(info)
+def write_directors(table_name, id):
+    movie = ia.get_movie(id)
+    director_list = []
     
-    #writeInsertFile(info)
+    try:
+        for name in movie['directors']:
+            
+            if(str(name) == ''):
+                doNothing = True
+            elif(str(name) in director_list):
+                doNothing = True
+            else:
+                director_list.append(str(name))
+        
+        for name in director_list:
+            info = [str(name), id]
+            writeInsertFile('Directs', info)
+    except:
+        info = ['', id]
+        writeInsertFile('Directs', info)
 
-# def writeInsertFile(data):
-#     print(data)
 
+def write_writers(table_name, id):
+    movie = ia.get_movie(id)
+    writer_list = []
+    
+    try:
+        for name in movie['writers']:
+            
+            if(str(name) == ''):
+                doNothing = True
+            elif(str(name) in writer_list):
+                doNothing = True
+            else:
+                writer_list.append(str(name))
+        
+        for name in writer_list:
+            info = [str(name), id]
+            writeInsertFile('Writes', info)
+    except:
+        info = ['', id]
+        writeInsertFile('Writes', info)
 
-
-
-
-#Webscraper for the imdb website
-from imdb import Cinemagoer
-
-# create an instance of the Cinemagoer class
 ia = Cinemagoer()
-
-#Top 250 movies list
 list_of_250 = ia.get_top250_movies()
 
-
 for movie in list_of_250:
-    write_movies(0, movie.movieID)
-
-
-# ia = Cinemagoer()
-
-# #Id for the sake of testing
-# id = '0441773'
-
-# # get a movie
-# movie = ia.get_movie('0441773')
-
-# #Update the keys of the movie to include these categories, not included by default
-# ia.update(movie, ['reviews'])
-# ia.update(movie, ['awards'])
-# ia.update(movie, ['soundtrack'])
-
-# #this will show you all available keys to search through
-# print(sorted(movie.keys())) 
-
-
-   
-
+    #write_movies('Movie', movie.movieID)
+    write_directors('Directs', movie.movieID)
+    write_writers('Writes', movie.movieID)
