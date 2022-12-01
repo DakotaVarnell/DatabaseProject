@@ -39,7 +39,7 @@ CONSTRAINT Contains_Soundtrack_Title_PK PRIMARY KEY(Soundtrack_Title,Movie_Title
 
 CREATE TABLE Reviews(
 Username VARCHAR2(25),
-Review_Contents VARCHAR2(400),
+Review_Contents VARCHAR2(3000),
 Score VARCHAR2(20), 
 Date_of_Review DATE,
 Rev_Movie_Id VARCHAR2(20),

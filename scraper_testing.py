@@ -20,8 +20,10 @@ def writeInsertFile(tableName, infoList):
     
     query = query.rstrip(query[-1])
     query += ');'
-
-    testFile.write(query)
+    try:
+        testFile.write(query)
+    except:
+        print("Error writing to file\n")
 
 def write_movies(table_name, id):
     movie = ia.get_movie(id)
@@ -33,7 +35,7 @@ def write_movies(table_name, id):
         revenue = ''
         budget = ''
 
-    info = [id, movie['title'], '', movie['rating'], str(movie['certification'][-4]).split(':')[1], revenue, budget]
+    info = [id, str(movie['title']).replace("'", ''), '', movie['rating'], str(movie['certification'][-4]).split(':')[1], revenue, budget]
     writeInsertFile('Movie', info)
 
 def write_directors(table_name, id):
@@ -51,7 +53,7 @@ def write_directors(table_name, id):
                 director_list.append(str(name))
         
         for name in director_list:
-            info = [str(name), id]
+            info = [str(name).replace("'", ''), id]
             writeInsertFile('Directs', info)
     except:
         info = ['', id]
@@ -73,16 +75,37 @@ def write_writers(table_name, id):
                 writer_list.append(str(name))
         
         for name in writer_list:
-            info = [str(name), id]
+            info = [str(name).replace("'", ''), id]
             writeInsertFile('Writes', info)
     except:
         info = ['', id]
         writeInsertFile('Writes', info)
 
+def write_reviews(table_name, id):
+    movie = ia.get_movie(id)
+    ia.update(movie, ['reviews'])
+    reviews = []
+    try:
+        for review in movie['reviews']:
+            username = str(review['author'])
+            content = str(review['content']).replace("'", '')
+            if review['rating'] == None:
+                rating = 0  
+            else:
+                rating = int(str(review['rating']))  
+
+            info = [username, content, rating, str(review['date']), id]
+            reviews.append(info)
+    except:
+           info = [username, content, 0, str(review['date']), id]
+    writeInsertFile('Reviews', info)
+
+
 ia = Cinemagoer()
 list_of_250 = ia.get_top250_movies()
 
 for movie in list_of_250:
-    #write_movies('Movie', movie.movieID)
+    write_movies('Movie', movie.movieID)
     write_directors('Directs', movie.movieID)
     write_writers('Writes', movie.movieID)
+    write_reviews('Reviews', movie.movieID)
