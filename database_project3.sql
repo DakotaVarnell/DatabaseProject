@@ -88,10 +88,9 @@ Director_Flag VARCHAR2(20)
 
 CREATE TABLE Soundtrack(
 Title	VARCHAR2(25) CONSTRAINT Soundtrack_Title_PK PRIMARY KEY,
-cName VARCHAR(20),
-Performer_FName VARCHAR2(20),
-Performer_LName VARCHAR2(20),
-Ratings NUMBER(20)
+Song_Title VARCHAR(40)
+Writer_Name VARCHAR(20),
+Performer_Name VARCHAR2(40),
 );
 
 CREATE TABLE Works_For(
