@@ -1,4 +1,4 @@
-#Webscraper for the imdb website
+#Gathers information on movies using IMDBPY Library
 from imdb import Cinemagoer
 import cx_Oracle
 
