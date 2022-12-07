@@ -228,38 +228,42 @@ def write_person(table_name, mID):
         info = [name, str(birth_date), hometown, gender, number_of_movies, aFlag, wFlag, dFlag]
         writeInsertFile(table_name,info)
 
+def write_soundtrack(table_name, id):
+    movie = ia.get_movie(id)
+    ia.update(movie, ['soundtrack'])
+    soundtrack = []
+    try:
+        for soundtrack in movie['soundtrack']:
+           individual_items = str(soundtrack).split(":")
+           song_title = individual_items[0].replace("{", '')
+           writer = individual_items[2].split(",")[0]
+           performer = individual_items[3].split(",")[0]
+           soundtrack = [str(movie) + "Soundtrack", song_title, writer, performer]            
+    except:
+           soundtrack = [str(movie) + "Soundtrack", '', '', '']
+    writeInsertFile('Soundtrack', soundtrack)
 
-# create an instance of the Cinemagoer class
+def write_contains(table_name, id):
+    movie = ia.get_movie(id)
+    ia.update(movie, ['soundtrack'])
+    contains = []
+    try:
+        for contains in movie['soundtrack']:
+            contains = [str(movie) + "Soundtrack", id]            
+    except:
+           contains = [str(movie) + "Soundtrack", id]
+    writeInsertFile('Contains', contains)
+
+
+# create an instance of the Cinemagoer class for our use
 ia = Cinemagoer()
 list_of_250 = ia.get_top250_movies()
 
 for movie in list_of_250:
-    write_movies('Movie', movie.movieID)
-    write_directors('Directs', movie.movieID)
-    write_writers('Writes', movie.movieID)
-    write_reviews('Reviews', movie.movieID)
+    # write_movies('Movie', movie.movieID)
+    # write_directors('Directs', movie.movieID)
+    # write_writers('Writes', movie.movieID)
+    # write_reviews('Reviews', movie.movieID)
+    # write_soundtrack('Contains', movie.movieID)
+    # write_contains('Contains', movie.movieID)
     write_person('Person', movie.movieID)
-
-# def main():
-   
-
-#     #Top 250 movies list
-#     list_of_250 = ia.get_top250_movies()
-    
-#     #creates sample movie My Neighbor Totoro
-#     movie = ia.get_movie('0441773')
-#     # print(movie.keys())
-#     write_person('Person', movie.movieID)
-
-#     #iterates through every movie in the top 250 list
-#     # for movie in (list_of_250):
-#     #     #calls function for a person based on movieID
-#     #     write_person(movie.movieID)
-
-#     #Update the keys of the movie to include these categories, not included by default
-#     # ia.update(list_of_250, ['reviews'])
-#     # ia.update(list_of_250, ['awards'])
-#     # ia.update(list_of_250, ['soundtrack'])
-
-# if __name__  == "__main__":
-#     main()
