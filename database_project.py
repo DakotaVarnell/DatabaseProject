@@ -255,7 +255,7 @@ def write_contains(table_name, id):
     writeInsertFile('Contains', contains)
 
 
-# create an instance of the Cinemagoer class
+# create an instance of the Cinemagoer class for our use
 ia = Cinemagoer()
 list_of_250 = ia.get_top250_movies()
 
