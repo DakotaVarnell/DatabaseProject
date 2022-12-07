@@ -88,9 +88,10 @@ def write_writers(table_name, id):
 def writeWorksFor(table_name, id, name, pid):
     movie = ia.get_movie(id)
     person = ia.get_person(pid)
-    
+    print(person.keys())
     try:
-        pay = 0
+        pay = str(person['salary history']).split('$')
+        pay = str(pay[1]).replace(',', '').replace(']', '').replace("'", '')
     except:
         pay = 0
 
@@ -200,9 +201,9 @@ def write_person(table_name, mID):
             hometown = ''        
         try:
             number_of_movies=0
-            for film in person['filmography'].keys():
-                for movie in person['filmography'][film]:
-                    number_of_movies+=1
+            films = ia.get_person_filmography(id)
+            for film in films['data']['filmography']['actor']:
+                number_of_movies+=1
             print('num films',number_of_movies)
         except:
             number_of_movies = 1
@@ -285,13 +286,13 @@ ia = Cinemagoer()
 list_of_250 = ia.get_top250_movies()
 
 for movie in list_of_250:
-    write_movies('Movie', movie.movieID)
-    write_directors('Directs', movie.movieID)
-    write_writers('Writes', movie.movieID)
-    write_reviews('Reviews', movie.movieID)
-    write_soundtrack('Soundtrack', movie.movieID)
-    write_contains('Contains', movie.movieID)
+    # write_movies('Movie', movie.movieID)
+    # write_directors('Directs', movie.movieID)
+    # write_writers('Writes', movie.movieID)
+    # write_reviews('Reviews', movie.movieID)
+    # write_soundtrack('Soundtrack', movie.movieID)
+    # write_contains('Contains', movie.movieID)
     write_person('Person', movie.movieID)
-    write_genres('Genres', movie.movieID)
-    write_languages('Languages', movie.movieID)
-    write_awards('Awards', movie.movieID)
+    # write_genres('Genres', movie.movieID)
+    # write_languages('Languages', movie.movieID)
+    # write_awards('Awards', movie.movieID)
