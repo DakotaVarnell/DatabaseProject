@@ -6,7 +6,6 @@ director_IDs = set()
 writer_IDs = set()
 names = {}
 
-
 def writeInsertFile(tableName, infoList):
     testFile = open('insertFile.sql', 'a')
 
@@ -230,7 +229,7 @@ def write_soundtrack(table_name, id):
            song_title = individual_items[0].replace("{", '')
            writer = individual_items[2].split(",")[0]
            performer = individual_items[3].split(",")[0]
-           soundtrack = [str(movie) + "Soundtrack", song_title, writer, performer]            
+           soundtrack = [str(movie) + "Soundtrack", str(song_title).replace("'", ""), str(writer).replace("'", ''), str(performer).replace("'",'')]            
     except:
            soundtrack = [str(movie) + "Soundtrack", '', '', '']
     writeInsertFile('Soundtrack', soundtrack)
@@ -241,21 +240,58 @@ def write_contains(table_name, id):
     contains = []
     try:
         for contains in movie['soundtrack']:
-            contains = [str(movie) + "Soundtrack", id]            
+            contains = [str(movie) + " Soundtrack", id]         
     except:
-           contains = [str(movie) + "Soundtrack", id]
+           contains = [str(movie) + " Soundtrack", id]
     writeInsertFile('Contains', contains)
 
+def write_genres(table_name, id):
+    movie = ia.get_movie(id)
+    genres = []
+    try:
+        for genre in movie['genres']:
+            genres = [str(genre), id]
+            writeInsertFile('Genres', genres)
+    except:
+           genres = ['', id]
+           writeInsertFile('Genres', genres)
 
-# create an instance of the Cinemagoer class for our use
+def write_languages(table_name, id):
+    movie = ia.get_movie(id)
+    languages = []
+    try:
+        for language in movie['languages']:
+            languages = [str(language).replace("'",''), id]
+            writeInsertFile('Languages', languages)
+    except:
+           languages = ['', id]
+           writeInsertFile('Languages', languages)
+
+def write_awards(table_name, id):
+    movie = ia.get_movie(id)
+    ia.update(movie, ['awards'])
+    awards = []
+    #{'award': 'Oscar', 'year': 2009, 'result': 'Nominee', 'category': 'Academy Awards, USA', 'notes': 'Best Animated Feature Film of the Year', 'to': [<Person id:0828970[http] name:_John Stevenson_>, <Person id:0651706[http] name:_Mark Osborne_>]}
+    try:
+        for award in movie['awards']:
+            awards = [str(id), str(award['award']).replace("'", ''), award['year'], award['result'], str(award['category']).replace("'", ''), str(award['notes']).replace("'", '')]
+            writeInsertFile('Awards', awards)
+    except:
+            awards = [str(id), '','','','','']
+            writeInsertFile('Awards', awards)
+
+# create an instance of the Cinemagoer class
 ia = Cinemagoer()
 list_of_250 = ia.get_top250_movies()
 
 for movie in list_of_250:
-    # write_movies('Movie', movie.movieID)
-    # write_directors('Directs', movie.movieID)
-    # write_writers('Writes', movie.movieID)
-    # write_reviews('Reviews', movie.movieID)
-    # write_soundtrack('Contains', movie.movieID)
-    # write_contains('Contains', movie.movieID)
+    write_movies('Movie', movie.movieID)
+    write_directors('Directs', movie.movieID)
+    write_writers('Writes', movie.movieID)
+    write_reviews('Reviews', movie.movieID)
+    write_soundtrack('Soundtrack', movie.movieID)
+    write_contains('Contains', movie.movieID)
     write_person('Person', movie.movieID)
+    write_genres('Genres', movie.movieID)
+    write_languages('Languages', movie.movieID)
+    write_awards('Awards', movie.movieID)
