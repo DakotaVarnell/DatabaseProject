@@ -298,7 +298,7 @@ for movie in list_of_250:
     write_directors('Directs', movie.movieID)
     write_writers('Writes', movie.movieID)
     write_reviews('Reviews', movie.movieID)
-    write_soundtrack('Contains', movie.movieID)
+    write_soundtrack('Soundtrack', movie.movieID)
     write_contains('Contains', movie.movieID)
     write_person('Person', movie.movieID)
     write_genres('Genres', movie.movieID)
