@@ -256,9 +256,6 @@ def write_contains(table_name, id):
 
 
 # create an instance of the Cinemagoer class for our use
-ia = Cinemagoer()
-list_of_250 = ia.get_top250_movies()
-
 for movie in list_of_250:
     # write_movies('Movie', movie.movieID)
     # write_directors('Directs', movie.movieID)

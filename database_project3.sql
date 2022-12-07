@@ -70,20 +70,14 @@ Director_Receives VARCHAR2(20)
 );
 
 CREATE TABLE Person(
-Name    VARCHAR(40) CONSTRAINT Person_Name_PK PRIMARY KEY,
+Name    VARCHAR2(50) CONSTRAINT Person_Name_PK PRIMARY KEY,
 Birthdate DATE,
-Hometown VARCHAR2(25),
-Gender VARCHAR2(20),
-Spouse_FName VARCHAR2(25),
-Spouse_LName VARCHAR2(25),
-Parents_FName VARCHAR2(25),
-Parents_LName VARCHAR2(25),
-Children_FName VARCHAR2(25),
-Children_LName VARCHAR2(25),
+Hometown VARCHAR2(50),
+Gender VARCHAR2(1),
 Number_Of_Movies NUMBER(20),
-Actor_Flag VARCHAR2(20),
-Writer_Flag VARCHAR2(20),
-Director_Flag VARCHAR2(20)
+Actor_Flag VARCHAR2(1),
+Writer_Flag VARCHAR2(1),
+Director_Flag VARCHAR2(1)
 );
 
 CREATE TABLE Soundtrack(
