@@ -4,6 +4,8 @@ import cx_Oracle
 actor_IDs = set()
 director_IDs = set()
 writer_IDs = set()
+names = {}
+
 
 def writeInsertFile(tableName, infoList):
     testFile = open('insertFile.sql', 'a')
@@ -84,6 +86,18 @@ def write_writers(table_name, id):
         info = ['', id]
         writeInsertFile('Writes', info)
 
+def writeWorksFor(table_name, id, name, pid):
+    movie = ia.get_movie(id)
+    person = ia.get_person(pid)
+    
+    try:
+        pay = 0
+    except:
+        pay = 0
+
+    info = [id, name, pay]
+    writeInsertFile(table_name, info)
+
 def write_reviews(table_name, id):
     movie = ia.get_movie(id)
     ia.update(movie, ['reviews'])
@@ -107,14 +121,10 @@ def write_reviews(table_name, id):
 def update_person_flag(type, id):
     testFile = open('insertFile.sql', 'a')
     print("Still Running\n")
-    person = ia.getperson(id)  #########underscore
-    try:
-        name = person['name']
-        print(name)
-    except KeyError:
-        name = person.myName
-        print(name)
-    query = "\nUPDATE Person\n\t" + "SET " + type +"_Flag = 'y'\n\tWHERE Name = '" + name + "';"
+    person = ia.get_person(id)
+    name = names[id].replace("'", "")
+    print(id, name)
+    query = "\nUPDATE Person\n\t" + "SET " + type +"_Flag = 'y'\n\tWHERE Name = '" + str(name) + "';"
     try:
         testFile.write(query)
     except:
@@ -143,7 +153,9 @@ def write_person(table_name, mID):
                 print('Actor')
                 update_person_flag('Actor', person_id)
             else:
+                names[person_id] = a_list[i]
                 aIDs.append(person_id)
+                writeWorksFor('Works_For', mID, str(names[person_id]).replace("'", ""), person_id)
             actor_IDs.add(person_id)
     for i in range(len(d_list)):
         person_id = str(d_list).split(",")[i].split(":")[1].replace("[http] name", "")
@@ -154,6 +166,7 @@ def write_person(table_name, mID):
                 print('Director')
                 update_person_flag('Director', person_id)
             else:
+                names[person_id] = d_list[i]
                 dIDs.append(person_id)
             director_IDs.add(person_id)
     for i in range(len(w_list)):
@@ -165,45 +178,27 @@ def write_person(table_name, mID):
                 print('Writer')
                 update_person_flag('Writer', person_id)
             else:
+                names[person_id] = w_list[i]
                 wIDs.append(person_id)
             writer_IDs.add(person_id)
 
     #adds all actors, directors, and writers to be added on one list
-    personIDs = aIDs + dIDs + wIDs
+    personIDs = set(dIDs + wIDs + aIDs)
     print(personIDs)
     print(len(personIDs))
 
     #iterates through each person
     for id in personIDs:
         person = ia.get_person(id)
-        
-        print(person.infoset2keys)
-
-        try:
-            name = person.data['name']
-            print(name)
-        except KeyError:
-            name = person.myName
-            print(name)
-            # try:
-            #     name = person['name']
-            #     print(name)
-            # except:
-            #     name = ''
+        name = str(names[id]).replace("'", "")
         try:
             birth_date  = person['birth date']
-            print(birth_date)
         except:
             birth_date = ''
         try:
             hometown = person['birth notes']        
-            print('notes: ',hometown)
         except:
             hometown = ''        
-        try:
-            gender = 'x'
-        except:
-            gender = 'z'
         try:
             number_of_movies=0
             for film in person['filmography'].keys():
@@ -216,16 +211,13 @@ def write_person(table_name, mID):
 
         aFlag, wFlag, dFlag = '', '', ''
         if id in actor_IDs:
-            print('Actor')
             aFlag = 'y'
         if id in writer_IDs:
-            print('Writer')
             wFlag = 'y'
         if id in director_IDs:
-            print('Director')
             dFlag = 'y'
 
-        info = [name, str(birth_date), hometown, gender, number_of_movies, aFlag, wFlag, dFlag]
+        info = [name, str(birth_date), hometown, number_of_movies, aFlag, wFlag, dFlag]
         writeInsertFile(table_name,info)
 
 def write_soundtrack(table_name, id):

@@ -73,7 +73,6 @@ CREATE TABLE Person(
 Name    VARCHAR2(50) CONSTRAINT Person_Name_PK PRIMARY KEY,
 Birthdate DATE,
 Hometown VARCHAR2(50),
-Gender VARCHAR2(1),
 Number_Of_Movies NUMBER(20),
 Actor_Flag VARCHAR2(1),
 Writer_Flag VARCHAR2(1),
@@ -90,8 +89,6 @@ Performer_Name VARCHAR2(40),
 CREATE TABLE Works_For(
 Movie_Title_ID	VARCHAR2(20), 
 aName VARCHAR2(40) CONSTRAINT Works_For_aName_uk UNIQUE,
-Supporting VARCHAR2(20),
-Leading VARCHAR2(20),
 Pay NUMBER(20)
 );
 
