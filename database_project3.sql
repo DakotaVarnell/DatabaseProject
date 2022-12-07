@@ -62,11 +62,9 @@ CREATE TABLE Award(
 ID	VARCHAR2(20) CONSTRAINT Award_ID_PK PRIMARY KEY, 
 Award_Name	VARCHAR2(20),
 Date_of_Award DATE,
+Result VARCHAR2(40),
 Award_Event VARCHAR2(20),
-Movie_Receives VARCHAR2(20),
-Actor_Receives VARCHAR2(20),
-Writer_Receives VARCHAR2(20),
-Director_Receives VARCHAR2(20)
+Award_Type VARCHAR2(50)
 );
 
 CREATE TABLE Person(
