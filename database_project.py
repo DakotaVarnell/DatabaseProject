@@ -93,7 +93,7 @@ def writeWorksFor(table_name, id, name, pid):
         pay = str(person['salary history']).split('$')
         pay = str(pay[1]).replace(',', '').replace(']', '').replace("'", '')
     except:
-        pay = 0
+        pay = ''
     info = [id, name, pay]
     writeInsertFile(table_name, info)
 
@@ -274,7 +274,7 @@ def write_awards(table_name, id):
     #{'award': 'Oscar', 'year': 2009, 'result': 'Nominee', 'category': 'Academy Awards, USA', 'notes': 'Best Animated Feature Film of the Year', 'to': [<Person id:0828970[http] name:_John Stevenson_>, <Person id:0651706[http] name:_Mark Osborne_>]}
     try:
         for award in movie['awards']:
-            awards = [str(id), str(award['award']).replace("'", ''), award['year'], award['result'], str(award['category']).replace("'", ''), str(award['notes']).replace("'", '')]
+            awards = [str(id), str(award['award']).replace("'", ''), award['year'], award['result'], str(award['category']).replace("'", '').replace("&", ""), str(award['notes']).replace("'", '')]
             writeInsertFile('Award', awards)
     except:
             awards = [str(id), '','','','','']

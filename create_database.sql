@@ -14,7 +14,7 @@ DROP TABLE Works_For CASCADE CONSTRAINTS;
 CREATE TABLE Movie(
 Movie_Title_ID	VARCHAR2(40) CONSTRAINT Movie_Movie_Title_Id_PK PRIMARY KEY, 
 Movie_Name	VARCHAR2(40),
-Popularity NUMBER(40),
+Popularity NUMBER(38),
 IMDB_Rating FLOAT(40),
 Certification VARCHAR2(20),
 Box_Office_Revenue NUMBER(25),
@@ -34,7 +34,7 @@ Movie_Title_Id VARCHAR2(25)
 CREATE TABLE Contains(
 Soundtrack_Title VARCHAR2(40),
 Movie_Title_Id VARCHAR2(25),
-CONSTRAINT Contains_Soundtrack_Title_PK PRIMARY KEY(Soundtrack_Title,Movie_Title_Id)
+CONSTRAINT Contains_Title_PK PRIMARY KEY(Soundtrack_Title,Movie_Title_Id)
 );
 
 CREATE TABLE Reviews(
@@ -59,26 +59,27 @@ CONSTRAINT Languages_Lang_PK PRIMARY KEY(Lang,Movie_Title_Id)
 );
 
 CREATE TABLE Award(
-ID	VARCHAR2(25) CONSTRAINT Award_ID_PK PRIMARY KEY, 
+ID	VARCHAR2(25), 
 Award_Name	VARCHAR2(40),
 Date_of_Award NUMBER(20),
 Result VARCHAR2(40),
-Award_Event VARCHAR2(40),
-Award_Type VARCHAR2(70)
+Award_Event VARCHAR2(200),
+Award_Type VARCHAR2(200),
+CONSTRAINT Award_ID_PK PRIMARY KEY(ID, Award_Name, Award_Type)
 );
 
 CREATE TABLE Person(
 Name    VARCHAR2(70) CONSTRAINT Person_Name_PK PRIMARY KEY,
-Birthdate DATE,
+Birthdate VARCHAR2(40),
 Hometown VARCHAR2(70),
-Number_Of_Movies NUMBER(40),
+Number_Of_Movies NUMBER(38),
 Actor_Flag VARCHAR2(1),
 Writer_Flag VARCHAR2(1),
 Director_Flag VARCHAR2(1)
 );
 
 CREATE TABLE Soundtrack(
-Title	VARCHAR2(25) CONSTRAINT Soundtrack_Title_PK PRIMARY KEY,
+Title	VARCHAR2(100) CONSTRAINT Soundtrack_Title_PK PRIMARY KEY,
 Song_Title VARCHAR(70),
 Writer_Name VARCHAR(70),
 Performer_Name VARCHAR2(70)
@@ -87,7 +88,7 @@ Performer_Name VARCHAR2(70)
 CREATE TABLE Works_For(
 Movie_Title_ID	VARCHAR2(20), 
 aName VARCHAR2(70) CONSTRAINT Works_For_aName_uk UNIQUE,
-Pay VARCHAR(40)
+Pay VARCHAR(100)
 );
 
 ALTER TABLE Directs
@@ -101,18 +102,6 @@ ALTER TABLE Writes
 ALTER TABLE Works_For
     ADD CONSTRAINT Works_For_Movie_Title_Id_fk FOREIGN KEY(Movie_Title_ID)
     REFERENCES Movie(Movie_Title_Id);
-
-ALTER TABLE Directs
-    ADD CONSTRAINT Directs_dName_fk FOREIGN KEY(dName)
-    REFERENCES Person(Name);
-
-ALTER TABLE Writes
-    ADD CONSTRAINT Writes_wName_fk FOREIGN KEY(wName)
-    REFERENCES Person(Name);
-
-ALTER TABLE Works_For
-    ADD CONSTRAINT Works_For_aName_fk FOREIGN KEY(aName)
-    REFERENCES Person(Name);
 
 ALTER TABLE Contains
     ADD CONSTRAINT Contains_Movie_Title_Id_fk FOREIGN KEY(Movie_Title_Id)
