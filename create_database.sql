@@ -69,7 +69,7 @@ CONSTRAINT Award_ID_PK PRIMARY KEY(ID, Award_Name, Award_Type)
 );
 
 CREATE TABLE Person(
-Name    VARCHAR2(70) CONSTRAINT Person_Name_PK PRIMARY KEY,
+Person_Name VARCHAR2(70) CONSTRAINT Person_Name_PK PRIMARY KEY,
 Birthdate VARCHAR2(40),
 Hometown VARCHAR2(70),
 Number_Of_Movies NUMBER(38),
