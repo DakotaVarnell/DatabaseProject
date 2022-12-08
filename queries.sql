@@ -26,9 +26,9 @@ FROM Genres NATURAL JOIN Movie Natural Join Languages
 WHERE Genre='Drama' and Lang='Mandarin';
 
 --6 Design a meaningful query that joins four tables
-SELECT Person_Name, Number_Of_Movies, Genre
-FROM Person NATURAL JOIN Works_For NATURAL JOIN Genres
-WHERE Genre='Action' and Number_Of_Movies > 20;
+SELECT Movie_Name, dName, wName, Soundtrack_Title
+FROM Movie NATURAL JOIN Directs NATURAL JOIN Writes NATURAL JOIN Contains
+WHERE IMDB_Rating > 8;
 
 --7 Design a meaningful queries that use set theory (union, intersection or minus) operations
 SELECT dName FROM Directs WHERE Movie_Title_Id='0068646'
