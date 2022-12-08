@@ -1645,7 +1645,7 @@ insert into Writes
 insert into Writes
 	values('Lana Wachowski','0133093');
 insert into Reviews
-	values('ur1714901','The Wachowski brothers really did excel themselves with this movie. Its a brilliant movie on a number of different levels - the directing is excellent, the camera work is great, the visuals are stunning, the kung-fu is A+, acting is executed with style and conviction, and the plot is truly inspired. Its really hard to use enough superlatives on this movie!Itd be a 10/10, except for the ending. Having Neo do what he does at the end really lets it down, in my opinion. However, theres a couple of sequels on the way, so lets see what the Wachowskis can do to make up for it.Other than that, (and like I said above) the movie is operating on so many different levels that each time you watch it, you pick up something new... this isnt by accident, either. The Wachowski brothers had the actors read a number of definitive works (Simulation & Simulcra was one I believe) in modern literature and psychology, and applied liberal dashings of aspects of the major religions to provide the best sci-fi movie of the decade, if not ever.Im yet to meet somebody who hasnt enjoyed it. Its my favourite movie to watch on a good cinema system, too.',10,'23 April 2002','0133093');
+	values('ur1714901','The Wachowski brothers really did excel themselves with this movie. Its a brilliant movie on a number of different levels - the directing is excellent, the camera work is great, the visuals are stunning, the kung-fu is A+, acting is executed with style and conviction, and the plot is truly inspired. Its really hard to use enough superlatives on this movie!Itd be a 10/10, except for the ending. Having Neo do what he does at the end really lets it down, in my opinion. However, theres a couple of sequels on the way, so lets see what the Wachowskis can do to make up for it.Other than that, (and like I said above) the movie is operating on so many different levels that each time you watch it, you pick up something new... this isnt by accident, either. The Wachowski brothers had the actors read a number of definitive works (Simulation  Simulcra was one I believe) in modern literature and psychology, and applied liberal dashings of aspects of the major religions to provide the best sci-fi movie of the decade, if not ever.Im yet to meet somebody who hasnt enjoyed it. Its my favourite movie to watch on a good cinema system, too.',10,'23 April 2002','0133093');
 insert into Soundtrack
 	values('The Matrix Soundtrack','Rock is Dead ',' Marilyn Manson',' Marilyn Manson ');
 insert into Contains
@@ -3195,7 +3195,7 @@ insert into Writes
 insert into Writes
 	values('Brenda Chapman','0110357');
 insert into Reviews
-	values('ur23966498','The Lion King is by general consensus the greatest Disney film from their glorious renaissance period (1989-1999), and is undoubtedly worthy of such recognition. Notably, it is the highest rated Western animation on IMDbs own Top 250, which while flawed and imprecise is a good indicator of quality.A loose adaption of Shakespeares Hamlet, The Lion King is visually stunning, the peak of hand-drawn animation, with a strong voice cast and a wide selection of memorable tunes. It is a tight ~80 minutes, and one sometimes forgets just how quick the movie moves, yet it does so deftly. The characters are well defined, and the arc of Simbas growth, the core of the film, evolves satisfyingly. One could question whether more time should have been spent on Simbas growth in the middle act (there is incredulous imagery as Simba grows exponentially next to the stasis of Timon and Pumba), but to meander so would ask it to be an entirely different film.While it is not uncommon for a side character or two overshadow the main (see the Genie in Aladdin), Matthew Broderick and Jonathan Taylor Thomas (adult and young Simba respectively) are at risk from nearly all of the phenomenal cast. James Earl Jones is a commanding presence, and Jeremy Irons as Scar steals every scene. The fools of the film, be it Timon & Pumba, the Hyena trio or even Zazu, all provide the levity believably, that would otherwise leave an incredibly sombre film. Nala is powerful, though one must note that she seems at times far more capable than Simba to actually achieve anything. Nevertheless, Simbas coming-of-age arc, while predictable, is enjoyable, helped along by fantastic charisma and choice songs.The fact that the film has spawned a wildly successful musical gives a strong indication of the quality of the music, but what is less said is how beautiful the film is. As The Lion King was being released, works were already moving away from hand-drawn animation, with Toy Story released a year later. And The Lion King might be the peak of hand-drawn, with an enormous palate of creativity and variety. The opening vista for Circle of Life, the bursts of colour in Cant wait to be King and the sombre tone of Be Prepared all are gorgeous. Yet, special mention must go to the Stampede scene, one of the finest scenes of animation ever.One thing Ive developed from multiple viewings is how Timon and Pumba might be the weakest part of the movie. First, their life lessons are essentially reversed by Rafiki. Certainly they are qualified to the point of being narratively sidelined. They feel contrived and even a detraction from the meat of the movie. Their role is the fast food portion of the film- the quick fix over more meatier bits of the film. The entertainment provided is enjoyable regardless, and is essential to round off the movie as Disney.The Lion King is endlessly re-watchable, catchy, fun, while remaining a fantastic piece of cinema and an invaluable part of the Disney canon. Magnificent.',9,'5 June 2014','0110357');
+	values('ur23966498','The Lion King is by general consensus the greatest Disney film from their glorious renaissance period (1989-1999), and is undoubtedly worthy of such recognition. Notably, it is the highest rated Western animation on IMDbs own Top 250, which while flawed and imprecise is a good indicator of quality.A loose adaption of Shakespeares Hamlet, The Lion King is visually stunning, the peak of hand-drawn animation, with a strong voice cast and a wide selection of memorable tunes. It is a tight ~80 minutes, and one sometimes forgets just how quick the movie moves, yet it does so deftly. The characters are well defined, and the arc of Simbas growth, the core of the film, evolves satisfyingly. One could question whether more time should have been spent on Simbas growth in the middle act (there is incredulous imagery as Simba grows exponentially next to the stasis of Timon and Pumba), but to meander so would ask it to be an entirely different film.While it is not uncommon for a side character or two overshadow the main (see the Genie in Aladdin), Matthew Broderick and Jonathan Taylor Thomas (adult and young Simba respectively) are at risk from nearly all of the phenomenal cast. James Earl Jones is a commanding presence, and Jeremy Irons as Scar steals every scene. The fools of the film, be it Timon  Pumba, the Hyena trio or even Zazu, all provide the levity believably, that would otherwise leave an incredibly sombre film. Nala is powerful, though one must note that she seems at times far more capable than Simba to actually achieve anything. Nevertheless, Simbas coming-of-age arc, while predictable, is enjoyable, helped along by fantastic charisma and choice songs.The fact that the film has spawned a wildly successful musical gives a strong indication of the quality of the music, but what is less said is how beautiful the film is. As The Lion King was being released, works were already moving away from hand-drawn animation, with Toy Story released a year later. And The Lion King might be the peak of hand-drawn, with an enormous palate of creativity and variety. The opening vista for Circle of Life, the bursts of colour in Cant wait to be King and the sombre tone of Be Prepared all are gorgeous. Yet, special mention must go to the Stampede scene, one of the finest scenes of animation ever.One thing Ive developed from multiple viewings is how Timon and Pumba might be the weakest part of the movie. First, their life lessons are essentially reversed by Rafiki. Certainly they are qualified to the point of being narratively sidelined. They feel contrived and even a detraction from the meat of the movie. Their role is the fast food portion of the film- the quick fix over more meatier bits of the film. The entertainment provided is enjoyable regardless, and is essential to round off the movie as Disney.The Lion King is endlessly re-watchable, catchy, fun, while remaining a fantastic piece of cinema and an invaluable part of the Disney canon. Magnificent.',9,'5 June 2014','0110357');
 insert into Soundtrack
 	values('The Lion King Soundtrack','','','');
 insert into Contains
@@ -3871,7 +3871,7 @@ insert into Writes
 insert into Writes
 	values('Cornell Woolrich','0047396');
 insert into Reviews
-	values('ur2020269','This is likely to go down as the least popular user-comment in history, but then so be it. I believe in honesty and freedom of speech. Although universally considered as one of the top three (or maybe top five) best thrillers that Alfred Hitchcock made in his lengthy and undeniably brilliant career, I personally feel that "Rear Window" is the most overrated movie of all times and I sincerely cant fathom why its such a cinematic landmark. I reckon that the basic plot idea is utmost intriguing and that its rather inventive how the cameras film literally everything from within the same secluded living room location, but that about sums up all the films strengths. The narcistic photographer L.B. Jefferies (James Stewart) sits immobilized in his apartment, bound to both a wheelchair and a humongous plaster cast around his leg ever since he took too much risk during a photo shoot on a racetrack. Purely out of boredom, he begins to watch all his neighbors across the little cement garden. The watching quickly turns into observing with binoculars and then into spying with his most professional & strongest photo lenses. He then thinks he witnesses a middle-aged man murdering his wife in cold blood, but a befriended police inspector, his lovely girlfriend and even his nosy housekeeper have trouble believing him. I was particularly annoyed by the behavior and ignorance of the protagonist. Jeff is supposed to be an intelligent person, so he must understand or at least respect that the police cant just go invading someones private property and interrogate them about a possibly felony for which there isnt any evidence. The entire film evidently revolves on L.B. Jefferies arrogant persona, and of course it doesnt help that I never really liked the actor James Stewart. I can appreciate him when his characters arent omnipresent, like in Hitchcocks "Rope" for example, but here he was rapidly getting on my nerves. The other characters, including Grace Kelly who never looked prettier, are downgraded to mere extras. I am also aware that practically every review praises that the powerful impact of "Rear Window" lies in the fact that its a statement on the human towards voyeurism and blah blah, but to me a film has to be entertaining and plausible first and foremost. "Read Window" along with "Vertigo" and "The Man Who Knew Too Much" made me realize that cant get into Hitchs espionage or wrong-man-condemned thrillers, and that I find his more polished thrillers extremely boring, unrealistic and overrated. Im primarily a horror fanatic, and thus love the nasty Hitchcock films the most, like "Psycho", "Shadow of a Doubt", "Rope" and "Frenzy".',4,'7 February 2018','0047396');
+	values('ur2020269','This is likely to go down as the least popular user-comment in history, but then so be it. I believe in honesty and freedom of speech. Although universally considered as one of the top three (or maybe top five) best thrillers that Alfred Hitchcock made in his lengthy and undeniably brilliant career, I personally feel that "Rear Window" is the most overrated movie of all times and I sincerely cant fathom why its such a cinematic landmark. I reckon that the basic plot idea is utmost intriguing and that its rather inventive how the cameras film literally everything from within the same secluded living room location, but that about sums up all the films strengths. The narcistic photographer L.B. Jefferies (James Stewart) sits immobilized in his apartment, bound to both a wheelchair and a humongous plaster cast around his leg ever since he took too much risk during a photo shoot on a racetrack. Purely out of boredom, he begins to watch all his neighbors across the little cement garden. The watching quickly turns into observing with binoculars and then into spying with his most professional  strongest photo lenses. He then thinks he witnesses a middle-aged man murdering his wife in cold blood, but a befriended police inspector, his lovely girlfriend and even his nosy housekeeper have trouble believing him. I was particularly annoyed by the behavior and ignorance of the protagonist. Jeff is supposed to be an intelligent person, so he must understand or at least respect that the police cant just go invading someones private property and interrogate them about a possibly felony for which there isnt any evidence. The entire film evidently revolves on L.B. Jefferies arrogant persona, and of course it doesnt help that I never really liked the actor James Stewart. I can appreciate him when his characters arent omnipresent, like in Hitchcocks "Rope" for example, but here he was rapidly getting on my nerves. The other characters, including Grace Kelly who never looked prettier, are downgraded to mere extras. I am also aware that practically every review praises that the powerful impact of "Rear Window" lies in the fact that its a statement on the human towards voyeurism and blah blah, but to me a film has to be entertaining and plausible first and foremost. "Read Window" along with "Vertigo" and "The Man Who Knew Too Much" made me realize that cant get into Hitchs espionage or wrong-man-condemned thrillers, and that I find his more polished thrillers extremely boring, unrealistic and overrated. Im primarily a horror fanatic, and thus love the nasty Hitchcock films the most, like "Psycho", "Shadow of a Doubt", "Rope" and "Frenzy".',4,'7 February 2018','0047396');
 insert into Soundtrack
 	values('Rear Window Soundtrack','','','');
 insert into Contains
@@ -4026,3 +4026,769 @@ insert into Award
 	values('0021749','','','','','');
 insert into Movie
 	values('0078788','Apocalypse Now','',8.5,'R','','');
+insert into Directs
+	values('Francis Ford Coppola','0078788');
+insert into Writes
+	values('John Milius','0078788');
+insert into Writes
+	values('Francis Ford Coppola','0078788');
+insert into Writes
+	values('Michael Herr','0078788');
+insert into Writes
+	values('Joseph Conrad','0078788');
+insert into Reviews
+	values('ur5906266','As I stated above, I think that the 2000 version of the film ought to be treated separately. The Redux is not just a longer version. It contains two new and important scenes, and one of them, the "french" episode, adds a whole new touch to a classic movie, WITHOUT breaking the atmosphere or disturbing the overall picture. I remember as I saw the Redux for the first time, that my whole understanding of the war in Vietnam changed, and how I had to go to the library and get an update on a few things. Also it is interesting that Coppola chose the year 2000 for the longer Redux. My guess is that he feels that the movie is as important today as it was back in 1979. He even went to the trouble of making an excellent piece of art even better, in order to actually make all the old fans see the new stuff, and to present a whole new generation with a very controversial and strong comment on one of the most bloody wars in recorded history. The movie is thought-provoking indeed, but also it has a visually very beautifully composed screenplay. Capturing the madness and chaos of war the storyline is also filled with more or less obvious metaphors and philosophical or existential riddles. A friend of mine called it "the most philosophical of all movies" - perhaps an overstatement - in my opinion it is just a very good film about war and the politics of war. But I can see that there is plenty for everyone here. What Im saying is that its one of those movies that you are likely to hear distinctly different opinions about, and you are most probably going to think again and again about it. Ive seen the Redux 5, 6 or 7 times, and it is always a puzzling experience. Highly recommended.',10,'2 September 2005','0078788');
+insert into Soundtrack
+	values('Apocalypse Now Soundtrack','','','');
+insert into Contains
+	values('Apocalypse Now Soundtrack','0078788');
+insert into Genres
+	values('Drama','0078788');
+insert into Genres
+	values('Mystery','0078788');
+insert into Genres
+	values('War','0078788');
+insert into Languages
+	values('English','0078788');
+insert into Languages
+	values('French','0078788');
+insert into Languages
+	values('Vietnamese','0078788');
+insert into Award
+	values('0078788','Oscar',1980,'Winner','Academy Awards, USA','Best Cinematography');
+insert into Award
+	values('0078788','Oscar',1980,'Winner','Academy Awards, USA','Best Sound');
+insert into Award
+	values('0078788','Oscar',1980,'Nominee','Academy Awards, USA','Best Picture');
+insert into Award
+	values('0078788','Oscar',1980,'Nominee','Academy Awards, USA','Best Actor in a Supporting Role');
+insert into Award
+	values('0078788','Oscar',1980,'Nominee','Academy Awards, USA','Best Director');
+insert into Award
+	values('0078788','Oscar',1980,'Nominee','Academy Awards, USA','Best Writing, Screenplay Based on Material from Another Medium');
+insert into Award
+	values('0078788','Oscar',1980,'Nominee','Academy Awards, USA','Best Art Direction-Set Decoration');
+insert into Award
+	values('0078788','Oscar',1980,'Nominee','Academy Awards, USA','Best Film Editing');
+insert into Award
+	values('0078788','BAFTA Film Award',1980,'Winner','BAFTA Awards','Best Direction');
+insert into Award
+	values('0078788','BAFTA Film Award',1980,'Winner','BAFTA Awards','Best Supporting Actor');
+insert into Award
+	values('0078788','','','','','');
+insert into Movie
+	values('0209144','Memento','',8.4,'15',39723096,9000000);
+insert into Directs
+	values('Christopher Nolan','0209144');
+insert into Writes
+	values('Christopher Nolan','0209144');
+insert into Writes
+	values('Jonathan Nolan','0209144');
+insert into Soundtrack
+	values('Memento Soundtrack','Do the Boogaloo ',' Gerhard Narholz (as Sammy Burdson) and John Fiddy (as Jean-Claude Madonne) ',' Quango  Sparky Sonoton Music Library ');
+insert into Contains
+	values('Memento Soundtrack','0209144');
+insert into Genres
+	values('Mystery','0209144');
+insert into Genres
+	values('Thriller','0209144');
+insert into Languages
+	values('English','0209144');
+insert into Award
+	values('0209144','Oscar',2002,'Nominee','Academy Awards, USA','Best Writing, Screenplay Written Directly for the Screen');
+insert into Award
+	values('0209144','Oscar',2002,'Nominee','Academy Awards, USA','Best Film Editing');
+insert into Award
+	values('0209144','Saturn Award',2003,'Nominee','Academy of Science Fiction, Fantasy  Horror Films, USA','Best DVD Special Edition Release');
+insert into Award
+	values('0209144','Saturn Award',2002,'Winner','Academy of Science Fiction, Fantasy  Horror Films, USA','Best Action/Adventure/Thriller Film');
+insert into Award
+	values('0209144','Saturn Award',2002,'Nominee','Academy of Science Fiction, Fantasy  Horror Films, USA','Best Actor');
+insert into Award
+	values('0209144','AFI Award',2002,'Winner','AFI Awards, USA','Screenwriter of the Year');
+insert into Award
+	values('0209144','AFI Award',2002,'Nominee','AFI Awards, USA','Movie of the Year');
+insert into Award
+	values('0209144','AFI Award',2002,'Nominee','AFI Awards, USA','Editor of the Year');
+insert into Award
+	values('0209144','Eddie',2002,'Nominee','American Cinema Editors, USA','Best Edited Feature Film - Dramatic');
+insert into Award
+	values('0209144','','','','','');
+insert into Movie
+	values('0082971','Indiana Jones and the Raiders of the Lost Ark','',8.4,'TV-PG',389925971,20000000);
+insert into Directs
+	values('Steven Spielberg','0082971');
+insert into Writes
+	values('Lawrence Kasdan','0082971');
+insert into Writes
+	values('George Lucas','0082971');
+insert into Writes
+	values('Philip Kaufman','0082971');
+insert into Reviews
+	values('ur33162918','It was born from the minds of some of the leading filmmakers of the moment, but an adventure that would become one of the leading film franchises. George Lucas had just created and launched two sci-fi classics with the first two chapters of the "Star Wars" saga while Spielberg was also already considered one of the most promising directors in Hollywood having effect astonishing successes with "Jaws (1975)" and Close Encounters of the Third Kind (1977) ".Classic recipe for matinees adored by George Lucas, the work of screenwriter Lawrence Kasdan is one of the most consistent doing an excellent job of keeping to the basics: virtually all characters in The Raiders of the Lost Ark are based on archetypes, but none of them lack personality. Indy himself is one of the most famous characters in American cinema, fitting the profile of the classic action hero, but with several peculiarities that make him special, from his acid sense of humor, his clumsy way to achieve a goal and also his intelligence. All villains are purposefully shallow and Manichean, with Nazism incorporating all the evil on Earth in a cartoonish way, but that never sounds strange in this proposal.In "Raiders of the Lost Ark", Spielberg makes his first openly action movie, even though "Duel", "Jaws" and "1941" had their setpieces there, here is a popcorn adventure from start to finish, and this is a category in which the filmmaker would become an expert. The opening scene alone is a lesson in how to introduce a character and his universe, with Spielbergs camera keeping a mystery about Indys identity - Douglas Slocombes photograph skillfully covers Fords face with shadows - but building your personality and your iconic figure through frames that portray your courage and demonstrate your skills; see the closed planes of the hat, the leather jacket and the whip on the long belt before the protagonist draws it against an attacker. It is an aesthetic care and well elaborated by the filmmakers camera game, which is maintained throughout the films other numerous action sequences. Between shootings in bars, races to stop a truck and a fist fight on an airstrip, what most charm the project is the ability of the filmmaker to create an atmosphere of tension that embarks on a frantic and good-natured adventure. is one of the great strengths of the feature, guaranteeing the film never to lose its rhythm, while the characters go over obstacle after obstacle, as in a real board game. Spielbergs ability to command the action is present in the most "naive" scenes, such as the snake pit or the fight in the Nazi plane, even in the most elaborate ones, such as the chase of trucks involving Jones and several soldiers.Classic backstage story, it was Harrison Fords suggestion that Indy, when faced by a skilled swordsman in the Cairo market, simply shoot his opponent instead of starting an elaborate fight with his whip - as the script originally said. A sensational improvisation that came out of the mere fact that Ford and several members of the team were sick because of the heat and the local food, and that perfectly ended up defining one of Indys personality traits. Throughout two other action scenes, the hero "asks" an opponent to wait while he prepares to return to the fight, and casually answers one of his colleagues who asks him what his plan is: "I dont know, I invent on the way". Priceless phrases and actions, and that only Harrison Ford would be able to deliver with such charisma and naturalness, in what is definitely the most striking role of his remarkable career. Ford is loose, unlike what he commonly complained of Han Solo here he can show some more facets and not a predominant one as is the extremely obvious scoundrel antihero. He is incredulous that the journey he will take will result in something really in the encounter with something divine in fact, in addition to being able to represent well the teacher for whom his students sigh, besides of course to reproduce the clich� of forbidden love for someone of the past, In this case, Marion, the strong and feminine character of Karen Allen, a woman who is clearly not a full-time damsel in distress.With special care for the action, what is also striking is how Spielberg maintains his same technical eye for the most expository scenes. For example, the scene where Indy and Brody (Denholm Elliott) are approached by government officials, and the archaeologist explains the Ark of the Covenant myth to them, Spielberg films much of the dialogue in an open plan with all four characters there, well-disposed through a mise en sc�ne that puts the agents - and the spectator - in a classroom, where Indy even uses the blackboard to present some concepts that will become important in the future; an exhibition that does not sound forced, after all the protagonist is in fact a teacher. We also see Spielbergs brand developing, where the filmmaker works on long shots that always change the characters positions and the graceful movement of the camera, giving the strong impression that a cut has happened, but remaining in the same shot. Iconography is also a factor that Spielberg and Slocombe masterfully explore, as in the scene where Indy visits Marion in her bar, casting a giant shadow on the girl, but being Marion a fearless woman - and the most memorable one in the archaeologists gallery - she is very capable of opposing the presence of Indy, and the shadow soon fades over the course of the conversation.The master of Star Wars songs, conductor John Williams had already been working with Spielberg since "Jaws", and not tired of delivering memorable themes, he reaches one of the culminations of his career with the Indiana Jones musical piece. It is a cheerful, adventurous and even flashy theme, which summarizes all the feelings and themes of the franchise, as well as offering emotionally demarcated tracks, such as the love theme with Marion and the most oppressive and heavy orchestra to portray the Nazis. Another work of genius, for a change.Being an example of the 80s, and literally beginning the decade, the overwhelming majority of the special effects of Hunters are done in a practical way, being done in the studio, unlike the digital effects so common today. It is very good that Spielberg did not like his friend George Lucas who adapted the effects of Star Wars for the "current times" which would be to deny the nature of the film and the time in which it was made. The snake scene was made with real snakes (and that scene with a cobra was filmed with a cobra between a glass panel and the actor. The giant ball at the beginning is actually a giant ball, and the scene where Indiana Jones is dragged by a car was filmed that way, with some stuntmen obviously, but Harrison Ford himself was dragged by the car at one point. We have rubber dolls and animatronics to serve as the dead henchmen, while the need for a more supernatural practically takes the film on a path of trash terror. Anyone who watched the film as a child is forever scarred by the images of Nazis having their faces twisted, exploded and melted when the Ark demonstrates the magnitude and horror of its power, and Spielberg and his team have fun here. Okay, the matte paintings and projections of the "spirits" of the Ark are images that today appear considerably dated, but still have an impact, as well as the wonderful eighth of the Nazi Ernst Toht (Ronald Lacey) literally melting before our eyes.One of the great films of Spielbergs career and one of the greatest adventure films of all time. The film, despite being a big blockbuster, still has personal traits of the director who is Jewish, so dont think that the Nazis are villains by chance. Spielberg prints in Ca�adores gains a strong and constant critical sub-text that enriches the cinematographic experience, combining narrative lightness with very strong "strikes" against the most murderous regime of the 20th century. It is almost like a form of indoctrination in which a certain political position was instilled in the subconscious without our realizing it."Raiders of the Lost Ark" borders on perfection, as it shows that the academic or scientific search can evidently solve some mysteries, while so many others are apparently instituted to be solved with time and investigations that will last for the lives and generations of many scholars, and this feeling gains even more strength with the scene that precedes the credits, where you see a shed with numerous artifacts kept, all waiting to star in one or more adventures of Indiana and yours.With all these elements well balanced - including a predilection for fantasy - "The Raiders of the Lost Ark" became one of the biggest commercial successes in cinema history, competing for eight Oscars and taking four, starting a millionaire franchise and also generating several imitations. We witnessed a perfect adventure film here, being one of the most dignified and perfect examples that the genre has ever seen. Indiana Jones is already born an iconic figure, thanks to the good ideas of George Lucas and the technical virtuosity of Steven Spielberg, who delivers his first great action film in a fun and intelligent way, using the nostalgia of a very specific period to create something completely new.',8,'27 June 2020','0082971');
+insert into Soundtrack
+	values('Indiana Jones and the Raiders of the Lost Ark Soundtrack','A British Tar ',' "H.M.S. Pinafore" ',' Arthur Sullivan ');
+insert into Contains
+	values('Indiana Jones and the Raiders of the Lost Ark Soundtrack','0082971');
+insert into Genres
+	values('Action','0082971');
+insert into Genres
+	values('Adventure','0082971');
+insert into Languages
+	values('English','0082971');
+insert into Languages
+	values('German','0082971');
+insert into Languages
+	values('Hebrew','0082971');
+insert into Languages
+	values('Spanish','0082971');
+insert into Languages
+	values('Arabic','0082971');
+insert into Languages
+	values('Nepali','0082971');
+insert into Award
+	values('0082971','Oscar',1982,'Winner','Academy Awards, USA','Best Art Direction-Set Decoration');
+insert into Award
+	values('0082971','Oscar',1982,'Winner','Academy Awards, USA','Best Sound');
+insert into Award
+	values('0082971','Oscar',1982,'Winner','Academy Awards, USA','Best Film Editing');
+insert into Award
+	values('0082971','Oscar',1982,'Winner','Academy Awards, USA','Best Effects, Visual Effects');
+insert into Award
+	values('0082971','','','','','');
+insert into Movie
+	values('1853728','Django Unchained','',8.4,'18+',425368238,100000000);
+insert into Directs
+	values('Quentin Tarantino','1853728');
+insert into Writes
+	values('Quentin Tarantino','1853728');
+insert into Reviews
+	values('ur13134536','Django Unchained (2012) **** (out of 4)Quentin Tarantino returns to full glory in this violent homage to the various Spaghetti Westerns that he grew up watching. Former slave Django (Jamie Foxx) is bought by bounty hunter Dr. Schultz (Christoph Waltz) and in exchange for his help in tracking down three wanted brothers, Schultz promises to give him his freedom. Things then change when Django decides to go find his wife (Kerry Washington) who is being held by the notorious Calvin Candie (Leonardo DiCaprio). I was one of the few who didnt care too much about Tarantinos previous film but DJANGO UNCHAINED has him returning to full glory. This film is funny, intense, violent, at times shocking but most important is that its flat-out great entertainment from start to finish. If one is easily offended then theres a lot here to get upset about but it seems people often forget that Tarantino makes exploitation movies, which means he takes a serious subject and exploits it for entertainment. All sorts of violent sub-genres came up during the 70s glory days of exploitation and I think mixing the Spaghetti Western with a slave story works on many levels. The biggest being that the film manages to shock you but you also hate whats going on so much that you cant help but get behind Django and his cause. Foxx really did a remarkable job here and perfectly captured those gunslingers who said very little but did their talking with a gun. Waltz and his comic timing are downright terrific and he really adds a perfect balance to what Foxx does. DiCaprio is also excellent in the role of the sadistic Southern gentleman and Im sure Oscar-time will be friendly. Don Johnson also does a great job with his small but flashy role and the debate on the masks is a brilliant example of comedy. The film really does a remarkable job at being a Tarantino film. Meaning that everything a fan has come to expect from one of his movies is on full display and perfectly executed. The music score is fabulous, the cinematography highly impressive and the costumes and settings really make you feel as if youre in the actual period that the film is set. DJANGO UNCHAINED isnt going to be for everyone but then again, what exploitation film is? The film is very dark, very bloody but oh so funny. It works on all levels including a terrific adventure picture with a bloody good revenge tale.',9,'27 December 2012','1853728');
+insert into Soundtrack
+	values('Django Unchained Soundtrack','','','');
+insert into Contains
+	values('Django Unchained Soundtrack','1853728');
+insert into Genres
+	values('Drama','1853728');
+insert into Genres
+	values('Western','1853728');
+insert into Languages
+	values('English','1853728');
+insert into Languages
+	values('German','1853728');
+insert into Languages
+	values('French','1853728');
+insert into Languages
+	values('Italian','1853728');
+insert into Award
+	values('1853728','Oscar',2013,'Winner','Academy Awards, USA','Best Performance by an Actor in a Supporting Role');
+insert into Award
+	values('1853728','Oscar',2013,'Winner','Academy Awards, USA','Best Writing, Original Screenplay');
+insert into Award
+	values('1853728','Oscar',2013,'Nominee','Academy Awards, USA','Best Motion Picture of the Year');
+insert into Award
+	values('1853728','Oscar',2013,'Nominee','Academy Awards, USA','Best Achievement in Cinematography');
+insert into Award
+	values('1853728','Oscar',2013,'Nominee','Academy Awards, USA','Best Achievement in Sound Editing');
+insert into Award
+	values('1853728','BAFTA Film Award',2013,'Winner','BAFTA Awards','Best Supporting Actor');
+insert into Award
+	values('1853728','BAFTA Film Award',2013,'Winner','BAFTA Awards','Best Original Screenplay');
+insert into Award
+	values('1853728','BAFTA Film Award',2013,'Nominee','BAFTA Awards','Best Editing');
+insert into Award
+	values('1853728','BAFTA Film Award',2013,'Nominee','BAFTA Awards','Best Sound');
+insert into Award
+	values('1853728','David Lean Award for Direction',2013,'Nominee','BAFTA Awards','Best Director');
+insert into Award
+	values('1853728','AACTA International Award',2013,'Winner','AACTA International Awards','Best Screenplay');
+insert into Award
+	values('1853728','Saturn Award',2013,'Winner','Academy of Science Fiction, Fantasy  Horror Films, USA','Best Writing');
+insert into Award
+	values('1853728','Saturn Award',2013,'Nominee','Academy of Science Fiction, Fantasy  Horror Films, USA','Best Action/Adventure Film');
+insert into Award
+	values('1853728','Saturn Award',2013,'Nominee','Academy of Science Fiction, Fantasy  Horror Films, USA','Best Supporting Actor');
+insert into Award
+	values('1853728','Saturn Award',2013,'Nominee','Academy of Science Fiction, Fantasy  Horror Films, USA','Best Costumes');
+insert into Award
+	values('1853728','AFI Award',2013,'Winner','AFI Awards, USA','Movie of the Year');
+insert into Award
+	values('1853728','AAFCA Award',2012,'Nominee','African-American Film Critics Association (AAFCA)','Best Picture');
+insert into Award
+	values('1853728','All Def Movie Award',2016,'Winner','All Def Movie Awards','Most Helpful White Person');
+insert into Award
+	values('1853728','All Def Movie Award',2016,'Nominee','All Def Movie Awards','Best Bad Mu#a Award');
+insert into Award
+	values('1853728','EDA Award',2013,'Nominee','Alliance of Women Film Journalists','Best Supporting Actor');
+insert into Award
+	values('1853728','Grand Jury Award',2013,'Winner','Almeria Western Film Festival','Best Feature');
+insert into Award
+	values('1853728','Amanda',2013,'Nominee','Amanda Awards, Norway','Best Foreign Feature Film (�rets utenlandske kinofilm)');
+insert into Award
+	values('1853728','Excellence in Production Design Award',2013,'Nominee','Art Directors Guild','Period Film');
+insert into Award
+	values('1853728','Honorable Mention',2013,'Winner','Association of Polish Filmmakers Critics Awards','Best Foreign Film');
+insert into Award
+	values('1853728','AFCA Award',2012,'Winner','Austin Film Critics Association','Best Supporting Actor');
+insert into Award
+	values('1853728','AFCA Award',2012,'Nominee','Austin Film Critics Association','Best Film');
+insert into Award
+	values('1853728','AFCA Award',2014,'Winner','Australian Film Critics Association Awards','Best International Film (English Language)');
+insert into Award
+	values('1853728','ACCA',2012,'Winner','Awards Circuit Community Awards','Best Original Screenplay');
+insert into Award
+	values('1853728','ACCA',2012,'Nominee','Awards Circuit Community Awards','Best Motion Picture');
+insert into Award
+	values('1853728','ACCA',2012,'Nominee','Awards Circuit Community Awards','Best Actor in a Supporting Role');
+insert into Award
+	values('1853728','ACCA',2012,'Nominee','Awards Circuit Community Awards','Best Director');
+insert into Award
+	values('1853728','ACCA',2012,'Nominee','Awards Circuit Community Awards','Best Production Design');
+insert into Award
+	values('1853728','ACCA',2012,'Nominee','Awards Circuit Community Awards','Best Costume Design');
+insert into Award
+	values('1853728','Award of the Japanese Academy',2014,'Nominee','Awards of the Japanese Academy','Best Foreign Language Film');
+insert into Award
+	values('1853728','BET Award',2013,'Winner','BET Awards','Best Actress');
+insert into Award
+	values('1853728','BET Award',2013,'Winner','BET Awards','Best Actor');
+insert into Award
+	values('1853728','BET Award',2013,'Nominee','BET Awards','Best Movie');
+insert into Award
+	values('1853728','BET Award',2013,'Nominee','BET Awards','Best Actor');
+insert into Award
+	values('1853728','BFCC Award',2012,'Winner','Black Film Critics Circle Awards','Best Supporting Actor');
+insert into Award
+	values('1853728','BFCC Award',2012,'Winner','Black Film Critics Circle Awards','Best Original Screenplay');
+insert into Award
+	values('1853728','BFCC Award',2012,'Nominee','Black Film Critics Circle Awards','Best Picture');
+insert into Award
+	values('1853728','Black Reel',2013,'Winner','Black Reel Awards','Best Supporting Actor');
+insert into Award
+	values('1853728','Black Reel',2013,'Winner','Black Reel Awards','Best Ensemble');
+insert into Award
+	values('1853728','Black Reel',2013,'Winner','Black Reel Awards','Best Song');
+insert into Award
+	values('1853728','Black Reel',2013,'Nominee','Black Reel Awards','Best Film');
+insert into Award
+	values('1853728','Black Reel',2013,'Nominee','Black Reel Awards','Best Actor');
+insert into Award
+	values('1853728','Black Reel',2013,'Nominee','Black Reel Awards','Best Supporting Actress');
+insert into Award
+	values('1853728','Bodil',2014,'Nominee','Bodil Awards','Best American Film (Bedste amerikanske film)');
+insert into Award
+	values('1853728','BOFCA Award',2012,'Nominee','Boston Online Film Critics Association','Best Film');
+insert into Award
+	values('1853728','BSFC Award',2012,'Nominee','Boston Society of Film Critics Awards','Best Supporting Actor');
+insert into Award
+	values('1853728','BSFC Award',2012,'Nominee','Boston Society of Film Critics Awards','Best Use of Music in a Film');
+insert into Award
+	values('1853728','Critics Choice Award',2013,'Winner','Broadcast Film Critics Association Awards','Best Original Screenplay');
+insert into Award
+	values('1853728','Critics Choice Award',2013,'Nominee','Broadcast Film Critics Association Awards','Best Picture');
+insert into Award
+	values('1853728','COFCA Award',2013,'Winner','Central Ohio Film Critics Association','Best Supporting Actor');
+insert into Award
+	values('1853728','COFCA Award',2013,'Nominee','Central Ohio Film Critics Association','Best Picture');
+insert into Award
+	values('1853728','COFCA Award',2013,'Nominee','Central Ohio Film Critics Association','Best Supporting Actor');
+insert into Award
+	values('1853728','COFCA Award',2013,'Nominee','Central Ohio Film Critics Association','Best Original Screenplay');
+insert into Award
+	values('1853728','CFCA Award',2012,'Nominee','Chicago Film Critics Association Awards','Best Supporting Actor');
+insert into Award
+	values('1853728','CFCA Award',2012,'Nominee','Chicago Film Critics Association Awards','Best Original Screenplay');
+insert into Award
+	values('1853728','Audience Award',2014,'Winner','Cinema Brazil Grand Prize','Best Foreign-Language Film (Melhor Filme Estrangeiro)');
+insert into Award
+	values('1853728','Cinema Brazil Grand Prize',2014,'Winner','Cinema Brazil Grand Prize','Best Foreign-Language Film (Melhor Filme Estrangeiro)');
+insert into Award
+	values('1853728','CinEuphoria',2014,'Nominee','CinEuphoria Awards','Best Director - International Competition');
+insert into Award
+	values('1853728','CinEuphoria',2014,'Nominee','CinEuphoria Awards','Best Screenplay - International Competition');
+insert into Award
+	values('1853728','CinEuphoria',2014,'Nominee','CinEuphoria Awards','Best Cinematography - International Competition');
+insert into Award
+	values('1853728','CinEuphoria',2014,'Nominee','CinEuphoria Awards','Best Costume Design - International Competition');
+insert into Award
+	values('1853728','CinEuphoria',2014,'Nominee','CinEuphoria Awards','Best Art Direction - International Competition');
+insert into Award
+	values('1853728','C�sar',2014,'Nominee','C�sar Awards, France','Best Foreign Film (Meilleur film �tranger)');
+insert into Award
+	values('1853728','DFWFCA Award',2012,'Nominee','Dallas-Fort Worth Film Critics Association Awards','Best Supporting Actor');
+insert into Award
+	values('1853728','DFWFCA Award',2012,'Nominee','Dallas-Fort Worth Film Critics Association Awards','Best Screenplay');
+insert into Award
+	values('1853728','Robert',2014,'Nominee','Danish Film Awards (Robert)','Best American Film (�rets amerikanske film)');
+insert into Award
+	values('1853728','David',2013,'Winner','David di Donatello Awards','Best Foreign Film (Miglior Film Straniero)');
+insert into Award
+	values('1853728','DFCS Award',2013,'Nominee','Denver Film Critics Society','Best Picture');
+insert into Award
+	values('1853728','DFCS Award',2013,'Nominee','Denver Film Critics Society','Best Original Screenplay');
+insert into Award
+	values('1853728','DFCC',2013,'Nominee','Dublin Film Critics Circle Awards','Best Actor');
+insert into Award
+	values('1853728','DFCC',2013,'Nominee','Dublin Film Critics Circle Awards','Best Film');
+insert into Award
+	values('1853728','DFCC',2013,'Nominee','Dublin Film Critics Circle Awards','Best Director');
+insert into Award
+	values('1853728','DFCC',2013,'Nominee','Dublin Film Critics Circle Awards','Best Screenplay');
+insert into Award
+	values('1853728','Empire Award',2013,'Nominee','Empire Awards, UK','Best Director');
+insert into Award
+	values('1853728','Empire Award',2013,'Nominee','Empire Awards, UK','Best Actor');
+insert into Award
+	values('1853728','Empire Award',2013,'Nominee','Empire Awards, UK','Best Film');
+insert into Award
+	values('1853728','GAFCA Award',2013,'Nominee','Georgia Film Critics Association (GAFCA)','Best Ensemble');
+insert into Award
+	values('1853728','GAFCA Award',2013,'Nominee','Georgia Film Critics Association (GAFCA)','Best Supporting Actor');
+insert into Award
+	values('1853728','GAFCA Award',2013,'Nominee','Georgia Film Critics Association (GAFCA)','Best Supporting Actor');
+insert into Award
+	values('1853728','GAFCA Award',2013,'Nominee','Georgia Film Critics Association (GAFCA)','Best Original Song');
+insert into Award
+	values('1853728','Gold Derby Film Award',2020,'Nominee','Gold Derby Awards','Supporting Actor of the Decade');
+insert into Award
+	values('1853728','Gold Derby Film Award',2020,'Nominee','Gold Derby Awards','Original Screenplay of the Decade');
+insert into Award
+	values('1853728','Gold Derby Film Award',2013,'Winner','Gold Derby Awards','Supporting Actor');
+insert into Award
+	values('1853728','Gold Derby Film Award',2013,'Winner','Gold Derby Awards','Original Screenplay');
+insert into Award
+	values('1853728','Gold Derby Film Award',2013,'Nominee','Gold Derby Awards','Supporting Actor');
+insert into Award
+	values('1853728','Gold Derby Film Award',2013,'Nominee','Gold Derby Awards','Director');
+insert into Award
+	values('1853728','Gold Derby Film Award',2013,'Nominee','Gold Derby Awards','Cinematography');
+insert into Award
+	values('1853728','Gold Derby Film Award',2013,'Nominee','Gold Derby Awards','Costume Design');
+insert into Award
+	values('1853728','Gold Derby Film Award',2013,'Nominee','Gold Derby Awards','Film Editing');
+insert into Award
+	values('1853728','Gold Derby Film Award',2013,'Nominee','Gold Derby Awards','Ensemble Cast');
+insert into Award
+	values('1853728','Gold Derby Film Award',2013,'Nominee','Gold Derby Awards','Motion Picture');
+insert into Award
+	values('1853728','Golden Globe',2013,'Winner','Golden Globes, USA','Best Performance by an Actor in a Supporting Role in a Motion Picture');
+insert into Award
+	values('1853728','Golden Globe',2013,'Winner','Golden Globes, USA','Best Screenplay - Motion Picture');
+insert into Award
+	values('1853728','Golden Globe',2013,'Nominee','Golden Globes, USA','Best Motion Picture - Drama');
+insert into Award
+	values('1853728','Golden Globe',2013,'Nominee','Golden Globes, USA','Best Performance by an Actor in a Supporting Role in a Motion Picture');
+insert into Award
+	values('1853728','Golden Globe',2013,'Nominee','Golden Globes, USA','Best Director - Motion Picture');
+insert into Award
+	values('1853728','Golden Schmoes',2012,'Winner','Golden Schmoes Awards','Favorite Movie of the Year');
+insert into Award
+	values('1853728','Golden Schmoes',2012,'Winner','Golden Schmoes Awards','Best Screenplay of the Year');
+insert into Award
+	values('1853728','Golden Schmoes',2012,'Winner','Golden Schmoes Awards','Best Supporting Actor of the Year');
+insert into Award
+	values('1853728','Golden Schmoes',2012,'Winner','Golden Schmoes Awards','Best Music in a Movie');
+insert into Award
+	values('1853728','Golden Schmoes',2012,'Nominee','Golden Schmoes Awards','Best Director of the Year');
+insert into Award
+	values('1853728','Golden Schmoes',2012,'Nominee','Golden Schmoes Awards','Best Supporting Actor of the Year');
+insert into Award
+	values('1853728','Golden Schmoes',2012,'Nominee','Golden Schmoes Awards','Coolest Character of the Year');
+insert into Award
+	values('1853728','Golden Schmoes',2012,'Nominee','Golden Schmoes Awards','Coolest Character of the Year');
+insert into Award
+	values('1853728','Golden Schmoes',2012,'Nominee','Golden Schmoes Awards','Favorite Movie Poster of the Year');
+insert into Award
+	values('1853728','Golden Schmoes',2012,'Nominee','Golden Schmoes Awards','Best Trailer of the Year');
+insert into Award
+	values('1853728','Golden Schmoes',2012,'Nominee','Golden Schmoes Awards','Best Action Sequence of the Year');
+insert into Award
+	values('1853728','Golden Schmoes',2012,'Nominee','Golden Schmoes Awards','Best Line of the Year');
+insert into Award
+	values('1853728','Golden Schmoes',2012,'Nominee','Golden Schmoes Awards','Best Line of the Year');
+insert into Award
+	values('1853728','Golden Trailer',2013,'Winner','Golden Trailer Awards','Best Music TV Spot');
+insert into Award
+	values('1853728','Golden Trailer',2013,'Nominee','Golden Trailer Awards','Best Music');
+insert into Award
+	values('1853728','Golden Trailer',2013,'Nominee','Golden Trailer Awards','Most Original Trailer');
+insert into Award
+	values('1853728','Golden Trailer',2013,'Nominee','Golden Trailer Awards','Best Foreign Graphics in a Trailer');
+insert into Award
+	values('1853728','Golden Trailer',2013,'Nominee','Golden Trailer Awards','Best Action Poster');
+insert into Award
+	values('1853728','Grammy',2014,'Nominee','Grammy Awards','Best Compilation Soundtrack for Visual Media');
+insert into Award
+	values('1853728','GMS Award',2013,'Winner','Guild of Music Supervisors Awards','Best Music Supervision for Film Budgeted Over 25 Million Dollars');
+insert into Award
+	values('1853728','GMS Award',2013,'Nominee','Guild of Music Supervisors Awards','Best Music Supervision for a Trailer');
+insert into Award
+	values('1853728','Hollywood Film Award',2012,'Winner','Hollywood Film Awards','Screenwriter of the Year');
+insert into Award
+	values('1853728','HFCS Award',2013,'Nominee','Houston Film Critics Society Awards','Best Picture');
+insert into Award
+	values('1853728','HFCS Award',2013,'Nominee','Houston Film Critics Society Awards','Best Director');
+insert into Award
+	values('1853728','Huading Award',2013,'Winner','Huading Award','Best Global Director for a Motion Picture');
+insert into Award
+	values('1853728','Humanitas Prize',2013,'Nominee','Humanitas Prize','Feature Film Category');
+insert into Award
+	values('1853728','IGN Award',2012,'Nominee','IGN Summer Movie Awards','Best Movie Director');
+insert into Award
+	values('1853728','IGN Award',2012,'Nominee','IGN Summer Movie Awards','Best Action Movie');
+insert into Award
+	values('1853728','Image Award',2013,'Winner','Image Awards (NAACP)','Outstanding Supporting Actor in a Motion Picture');
+insert into Award
+	values('1853728','Image Award',2013,'Winner','Image Awards (NAACP)','Outstanding Supporting Actress in a Motion Picture');
+insert into Award
+	values('1853728','Image Award',2013,'Nominee','Image Awards (NAACP)','Outstanding Motion Picture');
+insert into Award
+	values('1853728','Image Award',2013,'Nominee','Image Awards (NAACP)','Outstanding Actor in a Motion Picture');
+insert into Award
+	values('1853728','IFJA Award',2012,'Winner','Indiana Film Journalists Association, US','Best Director');
+insert into Award
+	values('1853728','IFJA Award',2012,'Nominee','Indiana Film Journalists Association, US','Best Picture');
+insert into Award
+	values('1853728','IFJA Award',2012,'Nominee','Indiana Film Journalists Association, US','Best Original Screenplay');
+insert into Award
+	values('1853728','IFJA Award',2012,'Nominee','Indiana Film Journalists Association, US','Best Supporting Actor');
+insert into Award
+	values('1853728','','','','','');
+insert into Movie
+	values('0910970','WALL�E','',8.4,'U',534767889,180000000);
+insert into Directs
+	values('Andrew Stanton','0910970');
+insert into Writes
+	values('Andrew Stanton','0910970');
+insert into Writes
+	values('Pete Docter','0910970');
+insert into Writes
+	values('Jim Reardon','0910970');
+insert into Reviews
+	values('ur16833436','A futuristic animated film with gorgeous visuals and important things to say - earth 700 years in the future full of trash? Its not exactly a far-fetched prediction! WALL-E was a magical character and a magical story. Probably my fave animated movie.',10,'19 November 2021','0910970');
+insert into Soundtrack
+	values('WALL�E Soundtrack','','','');
+insert into Contains
+	values('WALL�E Soundtrack','0910970');
+insert into Genres
+	values('Animation','0910970');
+insert into Genres
+	values('Adventure','0910970');
+insert into Genres
+	values('Family','0910970');
+insert into Genres
+	values('Sci-Fi','0910970');
+insert into Languages
+	values('English','0910970');
+insert into Languages
+	values('Hindi','0910970');
+insert into Award
+	values('0910970','Oscar',2009,'Winner','Academy Awards, USA','Best Animated Feature Film of the Year');
+insert into Award
+	values('0910970','Oscar',2009,'Nominee','Academy Awards, USA','Best Writing, Original Screenplay');
+insert into Award
+	values('0910970','Oscar',2009,'Nominee','Academy Awards, USA','Best Achievement in Music Written for Motion Pictures, Original Score');
+insert into Award
+	values('0910970','Oscar',2009,'Nominee','Academy Awards, USA','Best Achievement in Music Written for Motion Pictures, Original Song');
+insert into Award
+	values('0910970','Oscar',2009,'Nominee','Academy Awards, USA','Best Achievement in Sound Mixing');
+insert into Award
+	values('0910970','Oscar',2009,'Nominee','Academy Awards, USA','Best Achievement in Sound Editing');
+insert into Award
+	values('0910970','BAFTA Film Award',2009,'Winner','BAFTA Awards','Best Animated Film');
+insert into Award
+	values('0910970','','','','','');
+insert into Movie
+	values('0405094','The Lives of Others','',8.4,'10',77356819,2000000);
+insert into Directs
+	values('Florian Henckel von Donnersmarck','0405094');
+insert into Writes
+	values('Florian Henckel von Donnersmarck','0405094');
+insert into Soundtrack
+	values('The Lives of Others Soundtrack','','','');
+insert into Contains
+	values('The Lives of Others Soundtrack','0405094');
+insert into Genres
+	values('Drama','0405094');
+insert into Genres
+	values('Mystery','0405094');
+insert into Genres
+	values('Thriller','0405094');
+insert into Languages
+	values('German','0405094');
+insert into Award
+	values('0405094','Oscar',2007,'Winner','Academy Awards, USA','Best Foreign Language Film of the Year');
+insert into Award
+	values('0405094','BAFTA Film Award',2008,'Winner','BAFTA Awards','Best Film Not in the English Language');
+insert into Award
+	values('0405094','BAFTA Film Award',2008,'Nominee','BAFTA Awards','Best Film');
+insert into Award
+	values('0405094','BAFTA Film Award',2008,'Nominee','BAFTA Awards','Best Screenplay - Original');
+insert into Award
+	values('0405094','BAFTA Film Award',2008,'Nominee','BAFTA Awards','Best Leading Actor');
+insert into Award
+	values('0405094','David Lean Award for Direction',2008,'Nominee','BAFTA Awards','Best Director');
+insert into Award
+	values('0405094','Award of the Argentinean Academy',2007,'Winner','Academy of Motion Picture Arts and Sciences of Argentina','Best Foreign Film');
+insert into Award
+	values('0405094','ACCEC Award',2008,'Winner','ACCEC Awards','Best Foreign Film (Millor pel�l�cula estrangera)');
+insert into Award
+	values('0405094','Audience Award',2007,'Winner','Adelaide Film Festival','Best Feature');
+insert into Award
+	values('0405094','International Feature Award',2007,'Nominee','Adelaide Film Festival','Best Feature');
+insert into Award
+	values('0405094','Silver Condor',2008,'Winner','Argentinean Film Critics Association Awards','Best Foreign Film, Not in the Spanish Language (Mejor Pel�cula Extranjera)');
+insert into Award
+	values('0405094','ACCA',2006,'Nominee','Awards Circuit Community Awards','Best Foreign Language Film');
+insert into Award
+	values('0405094','Bambi',2006,'Winner','Bambi Awards','Best Actor - National');
+insert into Award
+	values('0405094','Bavarian Film Award',2006,'Winner','Bavarian Film Awards','Best Actor (Darstellerpreis)');
+insert into Award
+	values('0405094','Bavarian Film Award',2006,'Winner','Bavarian Film Awards','Best Direction - Young Film (Regienachwuchspreis)');
+insert into Award
+	values('0405094','Bavarian Film Award',2006,'Winner','Bavarian Film Awards','Best Screenplay (Drehbuchpreis)');
+insert into Award
+	values('0405094','','','','','');
+insert into Movie
+	values('0043014','Sunset Blvd.','',8.4,'Approved',5303175,1752000);
+insert into Directs
+	values('Billy Wilder','0043014');
+insert into Writes
+	values('Charles Brackett','0043014');
+insert into Writes
+	values('Billy Wilder','0043014');
+insert into Writes
+	values('D.M. Marshman Jr.','0043014');
+insert into Reviews
+	values('ur1162550','This was the first of Billy Wilders work Ive even seen, sure Ive heard of him, just not seen any of his movies. Made in the fiftys "Sunset Blvd." is simply timeless  its easy to see why this movie of a washed up writer/ turned gigolo to a washed-up has-been actress is rated so highly. A superb indictment of everything thats wrong and distasteful about Hollywood and probably even truer now that it actually was when it was made. This film is also crammed with in-jokes and references that practically beg for multiple viewings. The acting by everyone is perfect  this movie is such a wonder to behold.DVD Extras: Audio commentary with author of "On Sunset Boulevard: The Life And Times Of Billy Wilder" Ed Sikov ; Three featureless ("The Making Of Sunset Boulevard"; "The Music Of Sundet Boulevard", and "Edith Head: The Paramount Years") ;Morgue prologue; "Hollywood Location" map;Photo galleries; Theatrical trailerMy Grade: A+',10,'18 December 2004','0043014');
+insert into Soundtrack
+	values('Sunset Blvd. Soundtrack','','','');
+insert into Contains
+	values('Sunset Blvd. Soundtrack','0043014');
+insert into Genres
+	values('Drama','0043014');
+insert into Genres
+	values('Film-Noir','0043014');
+insert into Languages
+	values('English','0043014');
+insert into Award
+	values('0043014','Oscar',1951,'Winner','Academy Awards, USA','Best Writing, Story and Screenplay');
+insert into Award
+	values('0043014','Oscar',1951,'Winner','Academy Awards, USA','Best Art Direction-Set Decoration, Black-and-White');
+insert into Award
+	values('0043014','Oscar',1951,'Winner','Academy Awards, USA','Best Music, Scoring of a Dramatic or Comedy Picture');
+insert into Award
+	values('0043014','Oscar',1951,'Nominee','Academy Awards, USA','Best Actor in a Leading Role');
+insert into Award
+	values('0043014','Oscar',1951,'Nominee','Academy Awards, USA','Best Actress in a Leading Role');
+insert into Award
+	values('0043014','Oscar',1951,'Nominee','Academy Awards, USA','Best Actor in a Supporting Role');
+insert into Award
+	values('0043014','Oscar',1951,'Nominee','Academy Awards, USA','Best Actress in a Supporting Role');
+insert into Award
+	values('0043014','Oscar',1951,'Nominee','Academy Awards, USA','Best Director');
+insert into Award
+	values('0043014','Oscar',1951,'Nominee','Academy Awards, USA','Best Cinematography, Black-and-White');
+insert into Award
+	values('0043014','Oscar',1951,'Nominee','Academy Awards, USA','Best Film Editing');
+insert into Award
+	values('0043014','Oscar',1951,'Nominee','Academy Awards, USA','Best Picture');
+insert into Award
+	values('0043014','Blue Ribbon Award',1952,'Winner','Blue Ribbon Awards','Best Foreign Language Film');
+insert into Award
+	values('0043014','Bodil',1951,'Winner','Bodil Awards','Best American Film (Bedste amerikanske film)');
+insert into Award
+	values('0043014','Top 10 Film Award',1951,'Nominee','Cahiers du Cin�ma','Best Film');
+insert into Award
+	values('0043014','DGA Award',1951,'Nominee','Directors Guild of America, USA','Outstanding Directorial Achievement in Motion Pictures');
+insert into Award
+	values('0043014','DVD Premiere Award',2003,'Nominee','DVD Exclusive Awards','Best Overall New Extra Features, Library Release');
+insert into Award
+	values('0043014','Golden Globe',1951,'Winner','Golden Globes, USA','Best Motion Picture - Drama');
+insert into Award
+	values('0043014','Golden Globe',1951,'Winner','Golden Globes, USA','Best Director');
+insert into Award
+	values('0043014','Golden Globe',1951,'Winner','Golden Globes, USA','Best Actress - Drama');
+insert into Award
+	values('0043014','Golden Globe',1951,'Winner','Golden Globes, USA','Best Original Score');
+insert into Award
+	values('0043014','Golden Globe',1951,'Nominee','Golden Globes, USA','Best Supporting Actor');
+insert into Award
+	values('0043014','Golden Globe',1951,'Nominee','Golden Globes, USA','Best Screenplay');
+insert into Award
+	values('0043014','Golden Globe',1951,'Nominee','Golden Globes, USA','Best Cinematography - Black and White');
+insert into Award
+	values('0043014','Silver Ribbon',1951,'Winner','Italian National Syndicate of Film Journalists','Best Foreign Director (Regista del Miglior Film Straniero)');
+insert into Award
+	values('0043014','Silver Ribbon',1951,'Winner','Italian National Syndicate of Film Journalists','Best Foreign Actress (Migliore Attrice Straniera)');
+insert into Award
+	values('0043014','Diploma of Merit',1951,'Winner','Jussi Awards','Best Foreign Actress');
+insert into Award
+	values('0043014','Golden Laurel',1951,'Nominee','Laurel Awards','Top Female Dramatic Performance');
+insert into Award
+	values('0043014','NBR Award',1950,'Winner','National Board of Review, USA','Best Film');
+insert into Award
+	values('0043014','NBR Award',1950,'Winner','National Board of Review, USA','Best Actress');
+insert into Award
+	values('0043014','NBR Award',1950,'Winner','National Board of Review, USA','Top Ten Films');
+insert into Award
+	values('0043014','','','','','');
+insert into Movie
+	values('0050825','Paths of Glory','',8.4,'Approved',2092959,935000);
+insert into Directs
+	values('Stanley Kubrick','0050825');
+insert into Writes
+	values('Stanley Kubrick','0050825');
+insert into Writes
+	values('Calder Willingham','0050825');
+insert into Writes
+	values('Jim Thompson','0050825');
+insert into Writes
+	values('Humphrey Cobb','0050825');
+insert into Reviews
+	values('ur98033888','Paths of Glory is a remarkable example of how the stupidity and impulsiveness of war takes down those who have done nothing wrong.In this master war film by Stanley Kubrick, Col. Dax (Kirk Douglas) finds himself trying to defend his accused men of cowardice in face of the enemy. All awile it was in fact his superior officer who threatened to fire on his own man just to take over a hill. A lost cost from the start.Whats interesting about this film, aside of showing a man facing the system to go and defend his men, is also the hidden message and criticism over war and how generals take drastic decisions, ending up killing thousands of their own. The criticism comes to the smallest details of dialogue.Stanley Kubricks way of telling the stupidity of war and its affects on the military system is a genuine way of his, such the same with Dr. Strangelove.',8,'30 October 2022','0050825');
+insert into Soundtrack
+	values('Paths of Glory Soundtrack','','','');
+insert into Contains
+	values('Paths of Glory Soundtrack','0050825');
+insert into Genres
+	values('Drama','0050825');
+insert into Genres
+	values('War','0050825');
+insert into Languages
+	values('English','0050825');
+insert into Languages
+	values('German','0050825');
+insert into Languages
+	values('Latin','0050825');
+insert into Award
+	values('0050825','BAFTA Film Award',1958,'Nominee','BAFTA Awards','Best Film from any Source');
+insert into Award
+	values('0050825','Golden Train Award',1957,'Winner','Faro Island Film Festival','Best Screenplay');
+insert into Award
+	values('0050825','Humanitarian Award',1957,'Winner','Faro Island Film Festival','Main Competition');
+insert into Award
+	values('0050825','Golden Train Award',1957,'Nominee','Faro Island Film Festival','Best Film');
+insert into Award
+	values('0050825','','','','','');
+insert into Movie
+	values('0032553','The Great Dictator','',8.4,'G','','');
+insert into Directs
+	values('Charles Chaplin','0032553');
+insert into Writes
+	values('Charles Chaplin','0032553');
+insert into Reviews
+	values('ur1425686','Released in 1940, "The Great Dictator" was the first Hollywood film that denounced Hitler directly (albeit in the guise of Adenoid Hynkel), took a virulent stand against fascism, and directly addressed Anti-Semitism. Over-long, at times heavy-handed, it still has many wonderful sequences, including the famous dance with the globe, and all the scenes of Chaplin with Jack Oakie, each trying to out-do the other and prove his superiority.One criticism that seems to occasionally rear its head is the implication that Chaplins pre-World War II anti-fascism was somehow wrong-headed. The atrocities of the Holocaust werent fully known to the world yet, so Chaplins anti-Hitler diatribe is, in the minds of some, misguided. After the war this mindset would result in the debacle of the blacklist, when Chaplin, among others, were branded "pre-mature anti-fascists." In other words, it wasnt politically acceptable to be against Nazism until war broke out with the U.S. Hard to believe anyone could still see things that way now, but some do.The film industry of the 1930s wanted no part of international politics, no matter how blatant the brutality of a given regime. Profits were at stake. It was little goyisha Charley Chaplin, playing a Jewish barber, who took a public stand.While "The Great Dictator" may not among Chaplins finest films, it may, historically, be his finest hour.',0,'5 June 2002','0032553');
+insert into Soundtrack
+	values('The Great Dictator Soundtrack','','','');
+insert into Contains
+	values('The Great Dictator Soundtrack','0032553');
+insert into Genres
+	values('Comedy','0032553');
+insert into Genres
+	values('Drama','0032553');
+insert into Genres
+	values('War','0032553');
+insert into Languages
+	values('English','0032553');
+insert into Languages
+	values('Esperanto','0032553');
+insert into Languages
+	values('Latin','0032553');
+insert into Award
+	values('0032553','Oscar',1941,'Nominee','Academy Awards, USA','Best Picture');
+insert into Award
+	values('0032553','Oscar',1941,'Nominee','Academy Awards, USA','Best Actor in a Leading Role');
+insert into Award
+	values('0032553','Oscar',1941,'Nominee','Academy Awards, USA','Best Actor in a Supporting Role');
+insert into Award
+	values('0032553','Oscar',1941,'Nominee','Academy Awards, USA','Best Writing, Original Screenplay');
+insert into Award
+	values('0032553','Oscar',1941,'Nominee','Academy Awards, USA','Best Music, Original Score');
+insert into Award
+	values('0032553','Jussi',1974,'Winner','Jussi Awards','Best Foreign Filmmaker');
+insert into Award
+	values('0032553','Kinema Junpo Award',1961,'Winner','Kinema Junpo Awards','Best Foreign Language Film');
+insert into Award
+	values('0032553','NBR Award',1940,'Winner','National Board of Review, USA','Top Ten Films');
+insert into Award
+	values('0032553','NBR Award',1940,'Winner','National Board of Review, USA','Best Acting');
+insert into Award
+	values('0032553','','','','','');
+insert into Movie
+	values('0081505','The Shining','',8.4,'TV-14',17469946,19000000);
+insert into Directs
+	values('Stanley Kubrick','0081505');
+insert into Writes
+	values('Stephen King','0081505');
+insert into Writes
+	values('Stanley Kubrick','0081505');
+insert into Writes
+	values('Diane Johnson','0081505');
+insert into Reviews
+	values('ur2467618','This film is currently the 48th highest rated movie on IMDb and there are something like a bazillion reviews for it already on this site, so its not like my review is going to matter very much. Still, I decided to finally see this film for the first time and thought Id toss my impressions into the HUGE pool of information.Jack Nicholson, like the storys author Stephen King, is a school teacher who has quit in order to become a writer. He arranges an unusual job that will give him LOTS of spare time--he and his wife and son will move to a resort in the mountains and be the caretakers during the off-season. This is problematic for several reasons. First, they are all alone and the snow will keep them alone for months on end. So, if there are any problems, they are screwed. Second, Nicholson plays an alcoholic in recovery--and theres no booze in the place. Third, and probably the biggest one of all, is that the place is evil and begins screwing with the family--particularly their weirdo kid and the father. For the most part, the wife (Shelley Duvall) is there to look scared and be preyed upon! I could tell you more about the film....but wont. I dont want to spoil the suspense.I should also note that this is a very adult film. I am not talking about the violence--though it is violent and scary. But the language and very explicit nude scenes make it something you might want to think about before you watch it or let your kids see it.So what did I like about the film? Well the music was great--and REALLY pulled off the scare-factor!! And, the film is quite tense and exciting. I also liked the cinematography. Its odd, though, that the opening scenes shot by helicopter were GORGEOUS but the VERY Obsessive-Compulsive Kubrick (who was known to make a bazillion retakes of scenes) didnt catch or care that you can actually see a shadow of the copter in the opening. Look carefully at the bottom right of the screen and youll see it.My complaints about the film are few. But, I do think that Nicholsons characterization is something youll either love or hate. I thought he seriously over-acted and agreed with Kings assertion that he ALREADY seemed crazed when the film began. Kings notion of the problem being related to alcohol are pretty much minimized in the Kubrick treatment---its much more a film about insanity and evil spirits.I understand that Stephen King hated this particular adaptation of his novel and later he produced his own mini-series more in line with his vision for the film. But, considering he was not yet a big-name author and the god-like Stanley Kubrick was at the helm (and NO ONE tells him how to make a movie), it was a losing battle from the start. Kubrick helped write the screenplay, produced and directed the film. And, whatever King thought of it, the film WAS immensely successful--at least today when you ask people what they thought about the movie. Ill have to make it a point to see the mini-series as well---even if it currently has a mediocre score of 6.0.So, considering my score of 9, I liked it. Sure, there was some overacting but the basic story is very, very tense and I am sure a lot of viewers were scared half to death watching it. I am not a huge fan of horror films but can sure respect what was accomplished here.By the way, its interesting that this film is an awful lot like Kings later film "1408"--an awful lot. In "The Shining" you have an evil resort and in "1408" you have an evil hotel room--both which screw with people and cause death and mayhem--at least in the film versions.',9,'17 October 2011','0081505');
+insert into Soundtrack
+	values('The Shining Soundtrack','','','');
+insert into Contains
+	values('The Shining Soundtrack','0081505');
+insert into Genres
+	values('Drama','0081505');
+insert into Genres
+	values('Horror','0081505');
+insert into Languages
+	values('English','0081505');
+insert into Award
+	values('0081505','Saturn Award',2015,'Nominee','Academy of Science Fiction, Fantasy  Horror Films, USA','Best DVD/Blu-Ray Collection');
+insert into Award
+	values('0081505','Saturn Award',2012,'Winner','Academy of Science Fiction, Fantasy  Horror Films, USA','Best DVD Collection');
+insert into Award
+	values('0081505','Saturn Award',2008,'Nominee','Academy of Science Fiction, Fantasy  Horror Films, USA','Best DVD Collection');
+insert into Award
+	values('0081505','Saturn Award',1981,'Winner','Academy of Science Fiction, Fantasy  Horror Films, USA','Best Supporting Actor');
+insert into Award
+	values('0081505','Saturn Award',1981,'Nominee','Academy of Science Fiction, Fantasy  Horror Films, USA','Best Horror Film');
+insert into Award
+	values('0081505','Saturn Award',1981,'Nominee','Academy of Science Fiction, Fantasy  Horror Films, USA','Best Director');
+insert into Award
+	values('0081505','Saturn Award',1981,'Nominee','Academy of Science Fiction, Fantasy  Horror Films, USA','Best Music');
+insert into Award
+	values('0081505','David',1981,'Nominee','David di Donatello Awards','Best Foreign Producer (Migliore Produttore Straniero)');
+insert into Award
+	values('0081505','National Film Registry',2018,'Winner','National Film Preservation Board, USA','National Film Preservation Board');
+insert into Award
+	values('0081505','OFTA Film Hall of Fame',2014,'Winner','Online Film  Television Association','Motion Picture');
+insert into Award
+	values('0081505','Razzie Award',1981,'Nominee','Razzie Awards','Worst Actress');
+insert into Award
+	values('0081505','Razzie Award',1981,'Nominee','Razzie Awards','Worst Director');
+insert into Movie
+	values('4154756','Avengers: Infinity War','',8.4,'PG-13',2048709917,321000000);
+insert into Directs
+	values('Anthony Russo','4154756');
+insert into Directs
+	values('Joe Russo','4154756');
+insert into Writes
+	values('Christopher Markus','4154756');
+insert into Writes
+	values('Stephen McFeely','4154756');
+insert into Writes
+	values('Stan Lee','4154756');
+insert into Writes
+	values('Jack Kirby','4154756');
+insert into Writes
+	values('Joe Simon','4154756');
+insert into Writes
+	values('Steve Englehart','4154756');
+insert into Writes
+	values('Steve Gan','4154756');
+insert into Writes
+	values('Bill Mantlo','4154756');
+insert into Writes
+	values('Keith Giffen','4154756');
+insert into Writes
+	values('Jim Starlin','4154756');
+insert into Writes
+	values('Larry Lieber','4154756');
+insert into Writes
+	values('Don Heck','4154756');
