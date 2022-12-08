@@ -17,12 +17,12 @@ INNER JOIN Reviews ON Movie.Movie_Title_Id=Reviews.Rev_Movie_Id;
 --4 Design a meaningful queries that join three tables
 
 --5 Design a meaningful queries that join three tables
-SELECT Name, Genre, Lang
+SELECT Person_Name, Genre, Lang
 FROM Genres NATURAL JOIN Movie Natural Join Languages
 WHERE Genre='Drama' and Lang='Mandarin';
 
 --6 Design a meaningful query that joins four tables
-SELECT Name, Number_Of_Movies, Genre
+SELECT Person_Name, Number_Of_Movies, Genre
 FROM Genres NATURAL JOIN Movie NATURAL JOIN Works_For NATURAL JOIN Person
 WHERE Genre='Action' and Number_Of_Movies=45;
 
