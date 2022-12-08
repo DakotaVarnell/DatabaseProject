@@ -94,7 +94,6 @@ def writeWorksFor(table_name, id, name, pid):
         pay = str(pay[1]).replace(',', '').replace(']', '').replace("'", '')
     except:
         pay = 0
-
     info = [id, name, pay]
     writeInsertFile(table_name, info)
 
@@ -122,7 +121,7 @@ def update_person_flag(type, id):
     testFile = open('insertFile.sql', 'a')
     print("Still Running\n")
     person = ia.get_person(id)
-    name = names[id].replace("'", "")
+    name = str(names[id]).replace("'", "")
     #print(id, name)
     query = "\nUPDATE Person\n\t" + "SET " + type +"_Flag = 'y'\n\tWHERE Name = '" + str(name) + "';"
     try:

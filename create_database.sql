@@ -61,7 +61,7 @@ CONSTRAINT Languages_Lang_PK PRIMARY KEY(Lang,Movie_Title_Id)
 CREATE TABLE Award(
 ID	VARCHAR2(25) CONSTRAINT Award_ID_PK PRIMARY KEY, 
 Award_Name	VARCHAR2(40),
-Date_of_Award DATE,
+Date_of_Award NUMBER(20),
 Result VARCHAR2(40),
 Award_Event VARCHAR2(40),
 Award_Type VARCHAR2(70)
@@ -71,7 +71,6 @@ CREATE TABLE Person(
 Name    VARCHAR2(70) CONSTRAINT Person_Name_PK PRIMARY KEY,
 Birthdate DATE,
 Hometown VARCHAR2(70),
-Gender VARCHAR2(1),
 Number_Of_Movies NUMBER(40),
 Actor_Flag VARCHAR2(1),
 Writer_Flag VARCHAR2(1),
@@ -88,7 +87,7 @@ Performer_Name VARCHAR2(70)
 CREATE TABLE Works_For(
 Movie_Title_ID	VARCHAR2(20), 
 aName VARCHAR2(70) CONSTRAINT Works_For_aName_uk UNIQUE,
-Pay NUMBER(30)
+Pay VARCHAR(40)
 );
 
 ALTER TABLE Directs
