@@ -32,7 +32,7 @@ Movie_Title_Id VARCHAR2(25)
 );
 
 CREATE TABLE Contains(
-Soundtrack_Title VARCHAR2(40),
+Soundtrack_Title VARCHAR2(100),
 Movie_Title_Id VARCHAR2(25),
 CONSTRAINT Contains_Title_PK PRIMARY KEY(Soundtrack_Title,Movie_Title_Id)
 );
@@ -69,7 +69,7 @@ CONSTRAINT Award_ID_PK PRIMARY KEY(ID, Award_Name, Award_Type)
 );
 
 CREATE TABLE Person(
-Name    VARCHAR2(70) CONSTRAINT Person_Name_PK PRIMARY KEY,
+Person_Name VARCHAR2(70) CONSTRAINT Person_Name_PK PRIMARY KEY,
 Birthdate VARCHAR2(40),
 Hometown VARCHAR2(70),
 Number_Of_Movies NUMBER(38),
@@ -99,10 +99,6 @@ ALTER TABLE Writes
     ADD CONSTRAINT Writes_Movie_Title_Id_fk FOREIGN KEY(Movie_Title_Id)
     REFERENCES Movie(Movie_Title_Id);
 
-ALTER TABLE Works_For
-    ADD CONSTRAINT Works_For_Movie_Title_Id_fk FOREIGN KEY(Movie_Title_ID)
-    REFERENCES Movie(Movie_Title_Id);
-
 ALTER TABLE Contains
     ADD CONSTRAINT Contains_Movie_Title_Id_fk FOREIGN KEY(Movie_Title_Id)
     REFERENCES Movie(Movie_Title_Id);
@@ -127,14 +123,6 @@ ALTER TABLE Award
     ADD CONSTRAINT Award_ID_fk FOREIGN KEY(ID)
     REFERENCES Movie(Movie_Title_Id);
 
-ALTER TABLE Works_For
-    ADD CONSTRAINT Works_For_aName_PK PRIMARY KEY(aName,Movie_Title_ID);
-
-ALTER TABLE Directs
-    ADD CONSTRAINT Directs_dName_PK PRIMARY KEY(dName,Movie_Title_Id);
-
-ALTER TABLE Writes
-    ADD CONSTRAINT Writes_wName_PK PRIMARY KEY(wName,Movie_Title_Id);
 
 DESC Movie;
 DESC Directs;

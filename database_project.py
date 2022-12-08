@@ -4,8 +4,6 @@ import cx_Oracle
 from bs4 import BeautifulSoup
 import requests
 import lxml
-import pandas as pd
-import re
 actor_IDs = set()
 director_IDs = set()
 writer_IDs = set()
@@ -109,7 +107,7 @@ def write_reviews(table_name, id):
     try:
         for review in movie['reviews']:
             username = str(review['author'])
-            content = str(review['content']).replace("'", '')
+            content = str(review['content']).replace("'", '').replace("&", "")
             if review['rating'] == None:
                 rating = 0  
             else:
@@ -205,8 +203,7 @@ def write_person(table_name, mID):
             hometown = ''        
         
 
-        number_of_movies = 0
-        get_num_movies(id)
+        number_of_movies = get_num_movies(id)
 
         aFlag, wFlag, dFlag = '', '', ''
         if id in actor_IDs:
@@ -229,9 +226,9 @@ def write_soundtrack(table_name, id):
            song_title = individual_items[0].replace("{", '')
            writer = individual_items[2].split(",")[0]
            performer = individual_items[3].split(",")[0]
-           soundtrack = [str(movie) + " Soundtrack", str(song_title).replace("'", ""), str(writer).replace("'", ''), str(performer).replace("'",'')]            
+           soundtrack = [str(str(movie) + " Soundtrack").replace("'", ''), str(song_title).replace("'", ""), str(writer).replace("'", ''), str(performer).replace("'",'')]            
     except:
-           soundtrack = [str(movie) + " Soundtrack", '', '', '']
+           soundtrack = [str(str(movie) + " Soundtrack").replace("'", ''), '', '', '']
     writeInsertFile('Soundtrack', soundtrack)
 
 def write_contains(table_name, id):
@@ -240,9 +237,9 @@ def write_contains(table_name, id):
     contains = []
     try:
         for contains in movie['soundtrack']:
-            contains = [str(movie) + " Soundtrack", id]         
+            contains = [str(str(movie) + " Soundtrack").replace("'", ''), id]         
     except:
-           contains = [str(movie) + " Soundtrack", id]
+           contains = [str(str(movie) + " Soundtrack").replace("'", ''), id]
     writeInsertFile('Contains', contains)
 
 def write_genres(table_name, id):
@@ -271,10 +268,9 @@ def write_awards(table_name, id):
     movie = ia.get_movie(id)
     ia.update(movie, ['awards'])
     awards = []
-    #{'award': 'Oscar', 'year': 2009, 'result': 'Nominee', 'category': 'Academy Awards, USA', 'notes': 'Best Animated Feature Film of the Year', 'to': [<Person id:0828970[http] name:_John Stevenson_>, <Person id:0651706[http] name:_Mark Osborne_>]}
     try:
         for award in movie['awards']:
-            awards = [str(id), str(award['award']).replace("'", ''), award['year'], award['result'], str(award['category']).replace("'", ''), str(award['notes']).replace("'", '')]
+            awards = [str(id), str(award['award']).replace("'", '').replace("&", ""), award['year'], award['result'], str(award['category']).replace("'", '').replace("&", ""), str(award['notes']).replace("'", '').replace("&", "")]
             writeInsertFile('Award', awards)
     except:
             awards = [str(id), '','','','','']
@@ -325,7 +321,7 @@ for movie in list_of_250:
     write_reviews('Reviews', movie.movieID)
     write_soundtrack('Soundtrack', movie.movieID)
     write_contains('Contains', movie.movieID)
-    write_person('Person', movie.movieID)
+    # write_person('Person', movie.movieID)
     write_genres('Genres', movie.movieID)
     write_languages('Languages', movie.movieID)
     write_awards('Awards', movie.movieID)
