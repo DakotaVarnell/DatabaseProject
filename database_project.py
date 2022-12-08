@@ -88,7 +88,7 @@ def write_writers(table_name, id):
 def writeWorksFor(table_name, id, name, pid):
     movie = ia.get_movie(id)
     person = ia.get_person(pid)
-    print(person.keys())
+    #print(person.keys())
     try:
         pay = str(person['salary history']).split('$')
         pay = str(pay[1]).replace(',', '').replace(']', '').replace("'", '')
@@ -123,7 +123,7 @@ def update_person_flag(type, id):
     print("Still Running\n")
     person = ia.get_person(id)
     name = names[id].replace("'", "")
-    print(id, name)
+    #print(id, name)
     query = "\nUPDATE Person\n\t" + "SET " + type +"_Flag = 'y'\n\tWHERE Name = '" + str(name) + "';"
     try:
         testFile.write(query)
@@ -150,7 +150,7 @@ def write_person(table_name, mID):
             cont = True
         else:
             if person_id in actor_IDs:
-                print('Actor')
+                #print('Actor')
                 update_person_flag('Actor', person_id)
             else:
                 names[person_id] = a_list[i]
@@ -163,7 +163,7 @@ def write_person(table_name, mID):
             cont = True
         else:
             if person_id in director_IDs:
-                print('Director')
+                #print('Director')
                 update_person_flag('Director', person_id)
             else:
                 names[person_id] = d_list[i]
@@ -175,7 +175,7 @@ def write_person(table_name, mID):
             cont = True
         else:
             if person_id in writer_IDs:
-                print('Writer')
+                #print('Writer')
                 update_person_flag('Writer', person_id)
             else:
                 names[person_id] = w_list[i]
@@ -184,8 +184,8 @@ def write_person(table_name, mID):
 
     #adds all actors, directors, and writers to be added on one list
     personIDs = set(dIDs + wIDs + aIDs)
-    print(personIDs)
-    print(len(personIDs))
+    #print(personIDs)
+    #print(len(personIDs))
 
     #iterates through each person
     for id in personIDs:
