@@ -1,6 +1,11 @@
 #Webscraper for the imdb website
 from imdb import Cinemagoer
 import cx_Oracle
+from bs4 import BeautifulSoup
+import requests
+import lxml
+import pandas as pd
+import re
 actor_IDs = set()
 director_IDs = set()
 writer_IDs = set()
@@ -198,15 +203,10 @@ def write_person(table_name, mID):
             hometown = person['birth notes']        
         except:
             hometown = ''        
-        try:
-            number_of_movies=0
-            films = ia.get_person_filmography(id)
-            for film in films['data']['filmography']['actor']:
-                number_of_movies+=1
-            print('num films',number_of_movies)
-        except:
-            number_of_movies = 1
-            print('num movies',number_of_movies)
+        
+
+        number_of_movies = 0
+        get_num_movies(id)
 
         aFlag, wFlag, dFlag = '', '', ''
         if id in actor_IDs:
@@ -274,11 +274,45 @@ def write_awards(table_name, id):
     #{'award': 'Oscar', 'year': 2009, 'result': 'Nominee', 'category': 'Academy Awards, USA', 'notes': 'Best Animated Feature Film of the Year', 'to': [<Person id:0828970[http] name:_John Stevenson_>, <Person id:0651706[http] name:_Mark Osborne_>]}
     try:
         for award in movie['awards']:
-            awards = [str(id), str(award['award']).replace("'", ''), award['year'], award['result'], str(award['category']).replace("'", '').replace("&", ""), str(award['notes']).replace("'", '')]
+            awards = [str(id), str(award['award']).replace("'", ''), award['year'], award['result'], str(award['category']).replace("'", ''), str(award['notes']).replace("'", '')]
             writeInsertFile('Award', awards)
     except:
             awards = [str(id), '','','','','']
             writeInsertFile('Award', awards)
+
+def get_num_movies(id):
+    url = "https://www.imdb.com/name/nm"
+    hdr = {'User-Agent': 'Mozilla/5.0'}
+
+    url = url + str(id) + "/"
+
+    req = requests.get(url, headers=hdr).content
+
+    soup = BeautifulSoup(req, "lxml")
+
+    liPerformances = soup.find_all('li', {"class": "ipc-inline-list__item credits-total"})
+
+    x = str(liPerformances)
+    performanceNumbers = []
+
+    #Splits on ">" character, then checks if the immediate character afterwards is a number
+    for number in x.split(">"):
+        if number[0].isdigit():
+            performanceNumbers.append(number)
+
+    performanceCount = []
+
+    #Takes off '<\li' 
+    for number in performanceNumbers:
+        size = len(number)
+        performanceCount.append(int(number[:size - 4]))
+
+    total = 0
+
+    for x in performanceCount:
+        total += x
+
+    return(x)
 
 # create an instance of the Cinemagoer class
 ia = Cinemagoer()
