@@ -2,7 +2,7 @@
 
 --1 Design a meaningful query use only one table
 --Get all movies with the highest ratings
-SELECT * from movie where rating > 9;
+SELECT * FROM Movie WHERE IMDB_Rating > 9;
 
 --2 Design a meaningful queries that join two tables
 SELECT Movie.Movie_Name, Writes.wName
