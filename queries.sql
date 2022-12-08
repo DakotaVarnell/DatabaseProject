@@ -10,7 +10,9 @@ FROM Movie
 INNER JOIN Writes ON Movie.Movie_Title_Id=Writes.Movie_Title_Id;
 
 --3 Design a meaningful queries that join two tables
-
+SELECT Movie.Movie_Title_Id,Movie.Movie_Name, Reviews.Score
+FROM Movie
+INNER JOIN Reviews ON Movie.Movie_Title_Id=Reviews.Rev_Movie_Id;
 
 --4 Design a meaningful queries that join three tables
 
