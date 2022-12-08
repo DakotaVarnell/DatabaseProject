@@ -207,7 +207,7 @@ def write_person(table_name, mID):
         
 
         number_of_movies = 0
-        gen_num_movies(id)
+        get_num_movies(id)
 
         aFlag, wFlag, dFlag = '', '', ''
         if id in actor_IDs:
