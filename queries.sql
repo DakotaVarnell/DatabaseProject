@@ -17,6 +17,9 @@ INNER JOIN Writes ON Movie.Movie_Title_Id=Writes.Movie_Title_Id;
 --5 Design 2 meaningful queries that join three tables
 
 --6 Design 1 meaningful query that joins four tables
+SELECT Name, Number_Of_Movies, Genre
+FROM Genres NATURAL JOIN Movie NATURAL JOIN Works_For NATURAL JOIN Person
+WHERE Genre='Action' and Number_Of_Movies=45;
 
 --7 Design 2 meaningful queries that use set theory (union, intersection or minus) operations
 SELECT dName FROM Directs WHERE Movie_Title_Id='0068646'
