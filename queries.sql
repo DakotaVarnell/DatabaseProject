@@ -38,4 +38,4 @@ SELECT dName from Directs;
 SELECT COUNT(Movie_Title_Id) from Movie;
 
 --10 Design a meaningful queries that use grouping operations
-SELECT AVG(budget) FROM movies;
+SELECT AVG(budget) FROM Movie;
