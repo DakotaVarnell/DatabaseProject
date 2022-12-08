@@ -15,6 +15,10 @@ FROM Movie
 INNER JOIN Reviews ON Movie.Movie_Title_Id=Reviews.Rev_Movie_Id;
 
 --4 Design a meaningful queries that join three tables
+SELECT Movie.Movie_Name, Award.Award_Name,Award.Result, Reviews.Score 
+FROM Movie 
+JOIN Award ON Movie.Movie_Title_Id=Award.ID
+JOIN Reviews ON Award.ID=Reviews.Rev_Movie_Id;
 
 --5 Design a meaningful queries that join three tables
 SELECT Person_Name, Genre, Lang
