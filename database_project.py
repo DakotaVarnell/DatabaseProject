@@ -88,7 +88,7 @@ def write_writers(table_name, id):
 def writeWorksFor(table_name, id, name, pid):
     movie = ia.get_movie(id)
     person = ia.get_person(pid)
-    print(person.keys())
+    #print(person.keys())
     try:
         pay = str(person['salary history']).split('$')
         pay = str(pay[1]).replace(',', '').replace(']', '').replace("'", '')
@@ -122,8 +122,8 @@ def update_person_flag(type, id):
     testFile = open('insertFile.sql', 'a')
     print("Still Running\n")
     person = ia.get_person(id)
-    name = names[id].replace("'", "")
-    print(id, name)
+    name = str(names[id]).replace("'", "")
+    #print(id, name)
     query = "\nUPDATE Person\n\t" + "SET " + type +"_Flag = 'y'\n\tWHERE Name = '" + str(name) + "';"
     try:
         testFile.write(query)
@@ -150,7 +150,7 @@ def write_person(table_name, mID):
             cont = True
         else:
             if person_id in actor_IDs:
-                print('Actor')
+                #print('Actor')
                 update_person_flag('Actor', person_id)
             else:
                 names[person_id] = a_list[i]
@@ -163,7 +163,7 @@ def write_person(table_name, mID):
             cont = True
         else:
             if person_id in director_IDs:
-                print('Director')
+                #print('Director')
                 update_person_flag('Director', person_id)
             else:
                 names[person_id] = d_list[i]
@@ -175,7 +175,7 @@ def write_person(table_name, mID):
             cont = True
         else:
             if person_id in writer_IDs:
-                print('Writer')
+                #print('Writer')
                 update_person_flag('Writer', person_id)
             else:
                 names[person_id] = w_list[i]
@@ -184,8 +184,8 @@ def write_person(table_name, mID):
 
     #adds all actors, directors, and writers to be added on one list
     personIDs = set(dIDs + wIDs + aIDs)
-    print(personIDs)
-    print(len(personIDs))
+    #print(personIDs)
+    #print(len(personIDs))
 
     #iterates through each person
     for id in personIDs:
@@ -230,9 +230,9 @@ def write_soundtrack(table_name, id):
            song_title = individual_items[0].replace("{", '')
            writer = individual_items[2].split(",")[0]
            performer = individual_items[3].split(",")[0]
-           soundtrack = [str(movie) + "Soundtrack", str(song_title).replace("'", ""), str(writer).replace("'", ''), str(performer).replace("'",'')]            
+           soundtrack = [str(movie) + " Soundtrack", str(song_title).replace("'", ""), str(writer).replace("'", ''), str(performer).replace("'",'')]            
     except:
-           soundtrack = [str(movie) + "Soundtrack", '', '', '']
+           soundtrack = [str(movie) + " Soundtrack", '', '', '']
     writeInsertFile('Soundtrack', soundtrack)
 
 def write_contains(table_name, id):
@@ -276,23 +276,23 @@ def write_awards(table_name, id):
     try:
         for award in movie['awards']:
             awards = [str(id), str(award['award']).replace("'", ''), award['year'], award['result'], str(award['category']).replace("'", ''), str(award['notes']).replace("'", '')]
-            writeInsertFile('Awards', awards)
+            writeInsertFile('Award', awards)
     except:
             awards = [str(id), '','','','','']
-            writeInsertFile('Awards', awards)
+            writeInsertFile('Award', awards)
 
 # create an instance of the Cinemagoer class
 ia = Cinemagoer()
 list_of_250 = ia.get_top250_movies()
 
 for movie in list_of_250:
-    # write_movies('Movie', movie.movieID)
-    # write_directors('Directs', movie.movieID)
-    # write_writers('Writes', movie.movieID)
-    # write_reviews('Reviews', movie.movieID)
-    # write_soundtrack('Soundtrack', movie.movieID)
-    # write_contains('Contains', movie.movieID)
+    write_movies('Movie', movie.movieID)
+    write_directors('Directs', movie.movieID)
+    write_writers('Writes', movie.movieID)
+    write_reviews('Reviews', movie.movieID)
+    write_soundtrack('Soundtrack', movie.movieID)
+    write_contains('Contains', movie.movieID)
     write_person('Person', movie.movieID)
-    # write_genres('Genres', movie.movieID)
-    # write_languages('Languages', movie.movieID)
-    # write_awards('Awards', movie.movieID)
+    write_genres('Genres', movie.movieID)
+    write_languages('Languages', movie.movieID)
+    write_awards('Awards', movie.movieID)
